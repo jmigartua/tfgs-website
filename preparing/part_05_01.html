@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Josu M. Igartua">
+
+<title>Part V – Tips, Checklists, and Extras · igartua / gral-tfg – igartua / gral-tfg</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+
+
+<link href="../files/favicon-512.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html-afe927e19676d0e50b1726048be49fb1.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<style>html{ scroll-behavior: smooth; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="../assets/styles/theme.css">
+<meta property="og:title" content="Part V – Tips, Checklists, and Extras · igartua / gral-tfg">
+<meta property="og:image" content="https://jmigartua.github.io/tfgs-website/files/og-image.png">
+<meta property="og:site_name" content="igartua / gral-tfg">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:title" content="Part V – Tips, Checklists, and Extras · igartua / gral-tfg">
+<meta name="twitter:image" content="https://jmigartua.github.io/tfgs-website/files/og-image.png">
+<meta name="twitter:creator" content="@jmigartua">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body>
+
+<!-- Site header. Root-absolute hrefs are rewritten by Quarto to page-relative
+     links at render time, so this one partial works at the domain root and
+     under the /tfgs-website/ GitHub Pages sub-path alike. The three navs are
+     switched by <html lang> (set per directory in _metadata.yml) via CSS. -->
+<div class="topline"></div>
+<header class="site-head">
+  <div class="site-head__inner">
+    <a href="../index.html" class="wordmark" data-lang="en">igartua<span class="accent"> / gral-tfg</span>
+      <span class="wordmark-sub">Bachelor's theses in Physics · Josu M. Igartua · UPV/EHU</span>
+    </a>
+    <a href="../es/index.html" class="wordmark" data-lang="es">igartua<span class="accent"> / gral-tfg</span>
+      <span class="wordmark-sub">Trabajos de Fin de Grado en Física · Josu M. Igartua · UPV/EHU</span>
+    </a>
+    <a href="../eu/index.html" class="wordmark" data-lang="eu">igartua<span class="accent"> / gral-tfg</span>
+      <span class="wordmark-sub">Fisikako Gradu Amaierako Lanak · Josu M. Igartua · UPV/EHU</span>
+    </a>
+    <nav class="site-nav" data-lang="en">
+      <a href="../on-going/index.html">On going</a>
+      <a href="../past-tfg/index.html">Past GrAL/TFG</a>
+      <a href="../proposals/index.html">Proposals</a>
+      <a href="../preparing/index.html">Preparing</a>
+      <span class="lang"><a href="../index.html" class="current">en</a> <a href="../es/index.html">es</a> <a href="../eu/index.html">eu</a></span>
+    </nav>
+    <nav class="site-nav" data-lang="es">
+      <a href="../es/on-going/index.html">En curso</a>
+      <a href="../es/past-tfg/index.html">GrAL/TFG anteriores</a>
+      <a href="../es/proposals/index.html">Propuestas</a>
+      <a href="../es/preparing/index.html">Preparación</a>
+      <span class="lang"><a href="../index.html">en</a> <a href="../es/index.html" class="current">es</a> <a href="../eu/index.html">eu</a></span>
+    </nav>
+    <nav class="site-nav" data-lang="eu">
+      <a href="../eu/on-going/index.html">Martxan</a>
+      <a href="../eu/past-tfg/index.html">Aurreko GrAL/TFGak</a>
+      <a href="../eu/proposals/index.html">Proposamenak</a>
+      <a href="../eu/preparing/index.html">Prestaketa</a>
+      <span class="lang"><a href="../index.html">en</a> <a href="../es/index.html">es</a> <a href="../eu/index.html" class="current">eu</a></span>
+    </nav>
+  </div>
+</header>
+
+<header id="title-block-header">
+<h1 class="title">Part V – Tips, Checklists, and Extras</h1>
+
+</header>
+
+
+<h2 id="part-v-tips-checklists-and-extras" class="anchored">Part V – Tips, Checklists, and Extras</h2>
+<h3 id="final-tfg-checklist" class="anchored">5.1 Final TFG Checklist</h3>
+<p>Before submitting your TFG and heading into the defense, it’s helpful to run through a final <strong>checklist</strong> to ensure nothing is overlooked. Here’s a comprehensive end-stage checklist:</p>
+<ul>
+<li><strong>Content Completion:</strong> All chapters (Introduction through Conclusion) are written and complete. Check that every objective stated in the Introduction is addressed in Results/Discussion, and every question posed is answered in Conclusion. Ensure you haven’t left any “TODO” notes or placeholder text in the document.</li>
+<li><strong>Format and Guidelines:</strong> Verify that your thesis meets your university’s formatting requirements (margins, font size, line spacing, page numbering) and includes all required sections (title page, abstract, acknowledgments, table of contents, list of figures/tables if needed, references, appendices) (<a href="https://www.tuwien.at/index.php?eID=dumpFile&amp;t=f&amp;f=178418&amp;token=019c2acfdf48d69ead94ca7285d69fbf5c923078#:~:text=Status%20Quo%2C%20basics%2C%20state%20of,or%20used%3B%20sample%20description%20Results">Microsoft Word - 2023-07_Structure-Bachelor_thesis_TUW-FVV.docx</a>) (<a href="https://www.tuwien.at/index.php?eID=dumpFile&amp;t=f&amp;f=178418&amp;token=019c2acfdf48d69ead94ca7285d69fbf5c923078#:~:text=%26%20methods%20Conclusion%20Core%20statements%2C,work%2C%20but%20does%20not%20fit">Microsoft Word - 2023-07_Structure-Bachelor_thesis_TUW-FVV.docx</a>). Use the official template if provided. Check consistency: are all figure captions styled the same? Are equations numbered consecutively and referred to properly? This is easier if you used automated tools (LaTeX or Word styles) – do a quick scan for any outliers.</li>
+<li><strong>Proofreading for Language:</strong> Do a thorough proofread for spelling and grammar (<a href="https://physics.byu.edu/undergraduate/docs/thesis.pdf#:~:text=Cut%20out%20the%20lard,reader%20with%20boredom%20if%20your"></a>) (<a href="https://physics.byu.edu/undergraduate/docs/thesis.pdf#:~:text=declarative%20sentences%20often%2C%20but%20not,Make%20sure"></a>). It helps to read the text <strong>out loud</strong> or use a text-to-speech tool – your ear catches awkward phrasing or run-on sentences that your eye might skip. Correct any unclear sentences. Ensure terminology is used consistently (don’t switch between British and American spelling arbitrarily, etc.). Double-check that all variable symbols are defined when first used and that you use consistent notation (e.g., don’t use <code>N</code> in one section and <code>n</code> in another for the same quantity).</li>
+<li><strong>Technical Accuracy:</strong> Double-check all calculated values, units, and significant figures. Look at each result in the thesis and trace it back to raw data or code to confirm it’s correct. Ensure error bars and uncertainties are correctly computed and stated. Confirm that all axes in graphs are labeled with both quantity and units (<a href="https://www.beautiful.ai/blog/how-to-pull-off-your-thesis-defense-with-a-great-presentation#:~:text=Then%2C%20whatever%20you%20do%2C%20keep,two%20ideas%20on%20each%20slide">How to Pull Off Your Thesis Defense With a Great Presentation| The Beautiful Blog</a>). Ensure that any references to figures, tables, or equations in the text match the numbering on those items (no “Error: Reference source not found” if using Word fields; LaTeX usually handles it but check for any “??” placeholders) (<a href="https://physics.byu.edu/undergraduate/docs/thesis.pdf#:~:text=inexact%20word%20usage,Just%20keep%20in%20mind"></a>).</li>
+<li><strong>Reference Check:</strong> Make sure every citation in text appears in the reference list and vice versa (<a href="https://physics.byu.edu/undergraduate/docs/thesis.pdf#:~:text=Students%20often%20think%20that%20the,Advisors%20get"></a>). Verify consistency of reference format (all journal names abbreviated or not, etc., depending on style). Spot-check a few references for correctness of titles, authors, year. Ensure that any source you paraphrased is indeed cited at the end of that sentence (<a href="https://physics.byu.edu/undergraduate/docs/thesis.pdf#:~:text=You%20will%20be%20tempted%20to,Developing%20your%20list%20of%20references"></a>). If you directly quoted anything (rare in science theses), ensure it’s in quotes and properly cited with page number. Confirm that you gave credit for all figures/data that are not originally yours (with “adapted from [X]” in caption).</li>
+<li><strong>Backup and Versioning:</strong> Create a final backup of all thesis files and data. Ideally, you’ve been using version control (Git) and/or cloud storage, so this is done. But if not, <strong>do it now</strong> – copy everything to a safe location (one on the cloud or an external drive). This protects against last-minute computer failures and preserves your work for the future.</li>
+<li><strong>Submission Requirements:</strong> Check submission guidelines: do you need to submit a printed copy or PDF? Any forms or signatures needed (like a cover sheet signed by your supervisor)? Make sure to obtain those in advance. If a plagiarism report or declaration is required, run your thesis through the required software or attach the declaration. Ensure the PDF metadata (author, title) are correctly set if needed by library.</li>
+<li><strong>Printing Quality (if printing):</strong> If you must print hard copies, review the PDF in print preview. Check that colors in figures are distinguishable in grayscale if printing black-and-white, or choose patterns/markers instead of relying solely on color differences. Print one test page (especially a graph or equation-heavy page) to see if all fonts and symbols come out correctly (sometimes PDF math fonts can cause issues on certain printers – embedding fonts usually avoids this). Ensure page margins are print-safe. Plan printing and binding time; don’t do it last minute in case of printer issues.</li>
+<li><strong>Defense Preparation:</strong> Aside from the document, prepare your presentation (see Part III) and <strong>know your thesis</strong>. Skim through your thesis and think of potential questions: Are there any weak points someone might question? Any assumption you made that you should be ready to justify? Write a list of possible questions and formulate how you would answer (<a href="https://paperpile.com/g/thesis-defense/#:~:text=One%20of%20the%20scariest%20aspects,what%20the%20committee%20will%20ask">How to prepare an excellent thesis defense [6 tips] - Paperpile</a>) (<a href="https://paperpile.com/g/thesis-defense/#:~:text=James%20Hayton%20writes%20on%20his,to%20think%20as%20an%20academic">How to prepare an excellent thesis defense [6 tips] - Paperpile</a>). This doubles as good practice for the Q&amp;A.</li>
+<li><strong>Supervisor Approval:</strong> If possible, get a final okay from your supervisor. They might catch a minor detail or have a last suggestion. They’ve likely seen it already, but a final thumbs-up email can give peace of mind.</li>
+<li><strong>Physical Needs:</strong> For the defense day, prepare any items: print copies of your slides or thesis for yourself (with notes if needed), bring a laser pointer, adapters for your laptop if using one (HDMI/VGA), and backup your presentation on a USB. Arrange the room if you can (whiteboard space, etc., if you intend to use it). Essentially, a mini-checklist for presentation logistics: “Laptop and charger; Video adapter; Slide clicker with fresh battery; Water; Printed notes; Marker for whiteboard.”</li>
+<li><strong>Mindset Check:</strong> Remind yourself of what you accomplished and be proud of it. A positive mindset reduces anxiety. Know that you are as prepared as possible.</li>
+</ul>
+<p>Going through this checklist systematically a day or two before submission/defense ensures that you’re not missing any crucial element. It helps shift from creation mode to quality-control mode, which can catch things you overlooked while deep in writing. By ticking off each item, you can submit and present with confidence, knowing everything is in order.</p>
+<h3 id="common-mistakes" class="anchored">5.2 Common Mistakes</h3>
+<p>During the TFG process, certain pitfalls are common among students. Being aware of these can help you avoid them or correct course if you recognize any in your own work:</p>
+<ul>
+<li><p><strong>Poor Time Management &amp; Procrastination:</strong> One of the most frequent mistakes is underestimating the time needed, especially for writing. Some students <em>start too late</em> on writing (<a href="https://www.linkedin.com/pulse/mistakes-people-make-writing-thesis-dr-richard-huysmans#:~:text=Mistakes%20People%20Make%20Writing%20Their,supervisor%20%C2%B7%20Poor%20backup%20processes">Mistakes People Make Writing Their Thesis - LinkedIn</a>), leaving the bulk of thesis writing to the final weeks. This leads to rushed content, weaker analysis, or sloppy editing. Ideally, start writing early – draft sections like the literature review or methods as you go, rather than waiting until after all results are in. The opposite extreme, <em>starting too early</em> without enough data or clarity, can also waste time (for instance, writing introduction before understanding what the results really show (<a href="https://www.linkedin.com/pulse/mistakes-people-make-writing-thesis-dr-richard-huysmans#:~:text=Mistakes%20People%20Make%20Writing%20Their,supervisor%20%C2%B7%20Poor%20backup%20processes">Mistakes People Make Writing Their Thesis - LinkedIn</a>)). Strike a balance: plan your timeline (Part I.3) and stick to it. Use interim deadlines (finish data collection by X date, complete draft by Y date). Avoid the “crunch all night in last week” – it shows in the quality and will burn you out before the defense.</p></li>
+<li><p><strong>Not Involving Your Supervisor Enough:</strong> Some students work in isolation and <em>don’t seek regular feedback</em> (<a href="https://besteditproof.com/en/academy/5-common-mistakes-when-writing-a-thesis-or-dissertation#:~:text=5%20Common%20Mistakes%20When%20Writing,of%20rational%20association%20between">5 Common Mistakes When Writing a Thesis or Dissertation</a>). Your supervisor is a key resource – failing to update them or ask questions can lead to going down wrong paths for too long. It’s a mistake to think asking for help will reflect poorly; supervisors expect to guide you. Meet or email periodically (e.g., weekly or biweekly progress updates). Show them partial results or draft sections. They can catch misunderstandings early (e.g., if you misinterpreted a theory or need to refine an experiment). Not involving them might result in unpleasant surprises near submission (like them noticing a major flaw too late). Also incorporate their feedback promptly; don’t ignore suggestions due to pride or inertia. Remember, an external perspective improves your work quality.</p></li>
+<li><p><strong>Neglecting Backup and Version Control:</strong> <em>Poor backup practices</em> are unfortunately common (<a href="https://besteditproof.com/en/academy/5-common-mistakes-when-writing-a-thesis-or-dissertation#:~:text=5%20Common%20Mistakes%20When%20Writing,of%20rational%20association%20between">5 Common Mistakes When Writing a Thesis or Dissertation</a>). Students sometimes keep the thesis only on one laptop or a single USB drive. Hardware fails, files corrupt, or you might accidentally overwrite an important file. Not using version control (or at least sequential file versions) is another mistake – some end up with confusion like “Final_v10_revised_REAL.docx” versus “Final_reallyFINAL.pdf”. This is error-prone. Solution: use Git (as discussed) or at least systematically save versions (e.g., daily copies). And use cloud storage (OneDrive, Google Drive, etc.) or external drives for backup. Many have lost significant progress by not doing this. Make it a habit to backup daily. Also, if using cloud drives, watch for sync conflicts – don’t edit from two places at once to avoid generating divergent copies.</p></li>
+<li><p><strong>Too Much Focus on Research, Too Little on Writing:</strong> Some students pour all their time into experiments or coding and postpone writing until the last minute. This often leads to <em>incomplete or low-quality thesis text</em>. The thesis is what is evaluated and archived – it’s as important as the research itself. Balance your time to produce a well-written document. Conversely, <em>writing too early</em> without results can lead to large rewrites later (<a href="https://www.linkedin.com/pulse/mistakes-people-make-writing-thesis-dr-richard-huysmans#:~:text=Mistakes%20People%20Make%20Writing%20Their,supervisor%20%C2%B7%20Poor%20backup%20processes">Mistakes People Make Writing Their Thesis - LinkedIn</a>), but it’s safer to write early and revise than to write nothing. A related mistake is not allocating time for proofreading and editing – turning in a first draft as final. Plan for at least a week of editing in your timeline. Fresh eyes (or friend’s eyes) on your text will catch logical gaps or unclear language.</p></li>
+<li><p><strong>Lack of Clarity and Cohesion:</strong> In the rush to finish, students might produce a thesis that isn’t coherent – e.g., chapters feel disconnected, or objectives stated don’t match conclusions (maybe because the project aim evolved but intro wasn’t updated). Another issue is assuming too much knowledge from the reader: not explaining acronyms, skipping steps in reasoning – making the thesis hard to follow. To avoid this, review your thesis as if you are a reader unfamiliar with the specifics. Are all terms explained? Is the storyline (problem-&gt;method-&gt;result-&gt;conclusion) clear? Common clarity mistakes include overly long sentences and paragraphs, passive voice overuse leading to ambiguity, or not defining symbols in equations (<a href="https://physics.byu.edu/undergraduate/docs/thesis.pdf#:~:text=Cut%20out%20the%20lard,reader%20with%20boredom%20if%20your"></a>). Solution: break up long sentences, ensure each paragraph has one main idea, and read your thesis critically or have someone else read it.</p></li>
+<li><p><strong>Ignoring Format and Submission Guidelines:</strong> Some treat formatting as trivial and then lose points or face last-minute stress because margins are wrong, or sections out of order. E.g., forgetting to include an abstract or not numbering pages as required. Always check the official checklist or template. Another example: not embedding fonts in PDF (some universities require PDF/A). Or submitting an incorrect file format. Small mistakes like these can sometimes cause administrative delays. Double-check you followed all instructions for submission.</p></li>
+<li><p><strong>Overloading Slides or Rushing Defense Prep:</strong> On the presentation side, common mistakes are making slides too busy (too much text or data) and <em>not practicing the talk sufficiently</em>. Many students underestimate the defense – they focus on thesis writing and do the presentation last minute. This can lead to an incoherent talk, overtime, or inability to answer questions well. Another error is reading from slides or script, which disengages the audience. To avoid this: dedicate time to craft a concise presentation (Part III.1), and <strong>rehearse it</strong> multiple times. It’s obvious to examiners who has not practiced. Also, not anticipating likely questions is a mistake – if you glossed over a weak point in the thesis, expect to be asked; prepare an explanation rather than hoping it won’t come up.</p></li>
+<li><p><strong>Being Defensive about Criticism:</strong> During feedback sessions or the defense Q&amp;A, some students make the mistake of responding defensively to critique or getting flustered by tough questions. It’s important to remain calm and treat questions as opportunities to clarify, not attacks. Don’t say “I didn’t have time for that” aggressively or dismiss a question. A mistake is to argue instead of acknowledge and explain. The committee is testing your understanding, not attacking you personally. Even if you don’t know an answer, the mistake is to panic or try to bluff. It’s better to admit uncertainty and reason it out (as discussed in Part III.3) – failing to do so can give a bad impression.</p></li>
+<li><p><strong>Neglecting to Proof Figures and Data Presentation:</strong> Another common oversight: not tailoring graphs for presentation or thesis – e.g., tiny labels on axes, or colors that are indistinguishable in print. Or including raw data tables without context. Always polish your figures (mistake to use default Excel/Python plots without making them publication-quality). Also, ensure consistency (if one figure calls a variable “T”, another shouldn’t call it “Temp”). Check that figure references in text are correct (an easy mistake is to label figures in wrong order or forget to update a reference). For presentations, a typical mistake is cramming multiple plots on one slide that no one can read, or running out of time because too many slides.</p></li>
+<li><p><strong>Forgetting Audience Perspective:</strong> Many mistakes boil down to not putting yourself in the shoes of the reader/listener. This results in overly technical language, assuming knowledge they may not have, or focusing on details you care about rather than what communicates the science. Always ask: <em>would someone not in my day-to-day work understand this?</em> If not, rewrite or explain. Another audience-related mistake is not highlighting the significance – you might be so into the weeds you forget to state why the work matters. Make sure to connect back to the big picture (especially in intro and conclusion).</p></li>
+</ul>
+<p><strong>How to Avoid/Correct Mistakes:</strong> Recognizing these common errors is the first step. Use the earlier sections of this manual as guidance – follow your timeline, use the checklist, practice your talk, and solicit feedback. Be organized and proactive, and you’ll naturally sidestep many of these pitfalls. If you realize you’ve made one of these mistakes (say, you’re two weeks to deadline and barely started writing), take a deep breath and make a focused plan to catch up – maybe prioritize writing core sections and meet your supervisor to prioritize. Many mistakes can be mitigated if addressed early once noticed. The key is not to panic, but to systematically fix issues: e.g., if formatting is off, dedicate a day to reformat according to guidelines; if writing is behind, set aside non-essential tasks and write intensively (but also smartly, perhaps using speech-to-text or outline first to speed up).</p>
+<p>In summary, avoid procrastination, involve your supervisor, back up your work, pay attention to format, allocate time for writing and revision, and practice your presentation. These steps will help you steer clear of the common pitfalls that trip up students, leading to a smoother, more successful TFG experience.</p>
+<h3 id="final-advice-from-a-supervisor" class="anchored">5.3 Final Advice from a Supervisor</h3>
+<p>As a concluding perspective, here is some <strong>final advice</strong> often given by supervisors to undergraduate thesis students:</p>
+<ul>
+<li><p><strong>Start Early and Plan Ahead:</strong> This mantra cannot be overstated. Begin your literature review and project planning as early as possible (<a href="https://www.linkedin.com/pulse/mistakes-people-make-writing-thesis-dr-richard-huysmans#:~:text=Mistakes%20People%20Make%20Writing%20Their,supervisor%20%C2%B7%20Poor%20backup%20processes">Mistakes People Make Writing Their Thesis - LinkedIn</a>). Even if you don’t yet have results, start drafting introductory sections or setting up your analysis code. Early momentum helps avoid last-minute stress. As one advisor put it, <em>“Time is the one thing you can’t get more of – use it wisely from day one.”</em> Create a timeline with milestones and stick to it (and if you slip, adjust and keep going, rather than giving up on the plan).</p></li>
+<li><p><strong>Maintain Regular Communication:</strong> Keep your supervisor in the loop on progress and obstacles (<a href="https://besteditproof.com/en/academy/5-common-mistakes-when-writing-a-thesis-or-dissertation#:~:text=5%20Common%20Mistakes%20When%20Writing,of%20rational%20association%20between">5 Common Mistakes When Writing a Thesis or Dissertation</a>). Don’t hesitate to ask questions – seeking clarification is a sign of engagement, not ignorance. Supervisors appreciate students who are proactive in getting feedback and who update them without being chased. Schedule check-ins and come prepared with questions or a brief summary of progress. This not only keeps you accountable but also allows your supervisor to guide you before small issues become big problems.</p></li>
+<li><p><strong>Be Curious and Take Initiative:</strong> A thesis is a learning experience – dive into it with curiosity. Don’t just do the minimum; explore interesting side questions (within scope). If something unexpected appears in results, investigate it. Supervisors love to see students take intellectual ownership of the project – for example, reading beyond the bare necessities, or trying an analysis the advisor didn’t explicitly ask for (as long as core tasks are done). It shows scientific curiosity and can sometimes yield bonus insights to discuss in your thesis or defense.</p></li>
+<li><p><strong>Stay Organized (Both in Research and Writing):</strong> Develop good habits – keep a tidy lab notebook or log book (record experiments, code changes, thoughts) (<a href="https://physics.byu.edu/undergraduate/docs/thesis.pdf#:~:text=notebook%20or%20journal,where%20important%20ideas%20are%20discussed"></a>), organize your data files and references, and outline your thesis before writing to ensure logical flow. Organization saves time. One piece of advice: <em>“Document everything.”</em> That includes commenting code, noting assumptions, and writing down interpretation of raw findings. It will help when you write the thesis and when answering examiners. Also organize your bibliography from the start with a tool (supervisors notice well-curated references vs.&nbsp;last-minute ones).</p></li>
+<li><p><strong>Embrace Feedback and Criticism:</strong> Throughout the process, you’ll receive critique – on your proposal, on draft chapters, on your analysis approach. Don’t take it personally; even seasoned scientists have their work red-penned. Instead, <em>treat feedback as free expertise</em>. Implement suggestions diligently. If you disagree, discuss it with your supervisor calmly – often there is merit in their perspective or a compromise solution. Showing that you can respond to feedback and improve your work is something supervisors value highly (and it will serve you well in career). In the defense, if an examiner corrects or challenges something, acknowledge it and respond respectfully – it’s fine to say <em>“That’s a good point. I believe XYZ, but I see how ABC could be another explanation.”</em> The worst response is being defensive or dismissive.</p></li>
+<li><p><strong>Focus on Clarity and Storytelling:</strong> Your supervisor wants you to produce a thesis that is not just technically sound, but also a pleasure to read. So pay attention to writing quality – explain concepts as if to a fellow student, not just to experts. One senior professor advice: <em>“Always ask: would a non-specialist understand this? If not, add explanation or simplify.”</em> In your presentation, tell a story rather than reciting facts. Guide the audience: e.g., <em>“First, we set out to solve this puzzle… then we encountered an obstacle… here’s how we overcame it… and this is what we learned.”</em> That narrative keeps people engaged and demonstrates your deep understanding.</p></li>
+<li><p><strong>Attend to Detail, But Keep Perspective:</strong> Physics research demands attention to detail – whether it’s calibrating an instrument or checking a derivation. Sloppiness in one area (like unit mistakes or forgetting a minus sign) can undermine an entire result. So double-check details consistently. However, simultaneously, maintain a grip on the big picture: <em>Why</em> are you doing this and <em>what</em> does it imply? Don’t get so lost in minutiae that you forget the broader goal. Supervisors often advise: <em>“Don’t let the details drown out the message.”</em> In practice, this means after detailed analysis, step back and ask, “What does this result mean in simple terms?” and make sure that’s clear in your thesis and talk.</p></li>
+<li><p><strong>Take Care of Yourself:</strong> It’s common for students to push themselves too hard, especially near deadlines – pulling all-nighters, skipping breaks. But supervisors know that burnout leads to mistakes and diminishing returns. One might say, <em>“A fresh mind in the morning is better than a tired mind at 3 AM.”</em> So, sleep properly, eat well, and take short breaks to recharge. During the hectic final phase, use time management (Pomodoro technique or similar) to work efficiently while still giving yourself breathers. Also, keep a support system – talk to peers also doing TFGs; sharing experiences helps emotionally and you can trade tips.</p></li>
+<li><p><strong>Practice the Defense:</strong> Your supervisor likely will offer to do a mock defense or at least hear your talk. Take that opportunity. They can ask likely questions (they often know what the committee might focus on) and give pointers on presentation style. One last piece of advice they’d give: <em>“Anticipate questions, but if you get an unexpected one, stay calm and reason it out loud.”</em> They want you to succeed, so they’ll train you to handle tough questions by drilling a bit in practice.</p></li>
+<li><p><strong>Remember the Purpose:</strong> Finally, supervisors remind students that the TFG is a learning journey, not just an exam. You’re becoming a scientist through this process. So, enjoy the discovery aspects and don’t be afraid to make mistakes along the way (just learn from them). Be proud of what you’ve accomplished – very often, you will know more about your particular topic than anyone in the department. Carry that confidence into the defense. As one supervisor said to me, <em>“At the end of the day, you are the expert on your project. Show them what you learned.”</em></p></li>
+</ul>
+<p>In conclusion, the advice from a seasoned supervisor can be distilled to: <strong>plan well, work steadily, seek help when needed, communicate clearly, and maintain professionalism and well-being throughout the process</strong>. Following these principles will not only help you produce a strong thesis and defense, but also cultivate good research habits for your future endeavors. Congratulations on completing your TFG – now go share your knowledge with confidence!</p>
+
+
+<footer class="site-foot">
+  <div class="site-foot__inner">
+    <div class="foot-grid" data-lang="en">
+      <div class="foot-about">
+        <h4 class="anchored">igartua / gral-tfg</h4>
+        <p>Bachelor's theses (Gradu Amaierako Lanak / Trabajos de Fin de Grado) in Physics
+           supervised by Josu M. Igartua at the Faculty of Science and Technology,
+           University of the Basque Country (UPV/EHU), Leioa.</p>
+        <div class="cite-block">Josu M. Igartua Aldamiz · Physics Department, UPV/EHU<br>
+           josu.igartua@ehu.eus · ORCID 0000-0001-7983-5331</div>
+      </div>
+      <div>
+        <h4 class="anchored">Theses</h4>
+        <ul>
+          <li><a href="../past-tfg/index.html">Past GrAL/TFG</a></li>
+          <li><a href="../on-going/index.html">On going</a></li>
+          <li><a href="../proposals/index.html">Proposals</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="anchored">For students</h4>
+        <ul>
+          <li><a href="../preparing/index.html">Preparation manual</a></li>
+          <li><a href="../preparing/part_01_01.html">Developing the project</a></li>
+          <li><a href="../preparing/part_02_01.html">Writing the report</a></li>
+          <li><a href="../preparing/part_03_01.html">Presentation and defence</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="anchored">Connect</h4>
+        <ul>
+          <li><a href="mailto:josu.igartua@ehu.eus">Email</a></li>
+          <li><a href="https://scholar.google.com/citations?user=nYJ--CkAAAAJ">Google Scholar</a></li>
+          <li><a href="https://ekoizpen-zientifikoa.ehu.eus/investigadores/128210/detalle">UPV/EHU research profile</a></li>
+          <li><a href="https://github.com/jmigartua">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-grid" data-lang="es">
+      <div class="foot-about">
+        <h4 class="anchored">igartua / gral-tfg</h4>
+        <p>Trabajos de Fin de Grado (Gradu Amaierako Lanak) en Física dirigidos por
+           Josu M. Igartua en la Facultad de Ciencia y Tecnología de la
+           Universidad del País Vasco (UPV/EHU), Leioa.</p>
+        <div class="cite-block">Josu M. Igartua Aldamiz · Departamento de Física, UPV/EHU<br>
+           josu.igartua@ehu.eus · ORCID 0000-0001-7983-5331</div>
+      </div>
+      <div>
+        <h4 class="anchored">Trabajos</h4>
+        <ul>
+          <li><a href="../es/past-tfg/index.html">GrAL/TFG anteriores</a></li>
+          <li><a href="../es/on-going/index.html">En curso</a></li>
+          <li><a href="../es/proposals/index.html">Propuestas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="anchored">Para estudiantes</h4>
+        <ul>
+          <li><a href="../es/preparing/index.html">Manual de preparación</a></li>
+          <li><a href="../preparing/index.html">Manual completo (en inglés)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="anchored">Contacto</h4>
+        <ul>
+          <li><a href="mailto:josu.igartua@ehu.eus">Correo</a></li>
+          <li><a href="https://scholar.google.com/citations?user=nYJ--CkAAAAJ">Google Scholar</a></li>
+          <li><a href="https://ekoizpen-zientifikoa.ehu.eus/investigadores/128210/detalle">Perfil investigador UPV/EHU</a></li>
+          <li><a href="https://github.com/jmigartua">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-grid" data-lang="eu">
+      <div class="foot-about">
+        <h4 class="anchored">igartua / gral-tfg</h4>
+        <p>Josu M. Igartuak Euskal Herriko Unibertsitateko (UPV/EHU) Zientzia eta
+           Teknologia Fakultatean (Leioa) zuzendutako Fisikako Gradu Amaierako Lanak.</p>
+        <div class="cite-block">Josu M. Igartua Aldamiz · Fisika Saila, UPV/EHU<br>
+           josu.igartua@ehu.eus · ORCID 0000-0001-7983-5331</div>
+      </div>
+      <div>
+        <h4 class="anchored">Lanak</h4>
+        <ul>
+          <li><a href="../eu/past-tfg/index.html">Aurreko GrAL/TFGak</a></li>
+          <li><a href="../eu/on-going/index.html">Martxan</a></li>
+          <li><a href="../eu/proposals/index.html">Proposamenak</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="anchored">Ikasleentzat</h4>
+        <ul>
+          <li><a href="../eu/preparing/index.html">Prestaketa eskuliburua</a></li>
+          <li><a href="../eu/preparing/part_01_01.html">Proiektuaren garapena</a></li>
+          <li><a href="../eu/preparing/part_02_01.html">Txostena idaztea</a></li>
+          <li><a href="../eu/preparing/part_03_01.html">Aurkezpena eta defentsa</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="anchored">Harremana</h4>
+        <ul>
+          <li><a href="mailto:josu.igartua@ehu.eus">Posta</a></li>
+          <li><a href="https://scholar.google.com/citations?user=nYJ--CkAAAAJ">Google Scholar</a></li>
+          <li><a href="https://ekoizpen-zientifikoa.ehu.eus/investigadores/128210/detalle">UPV/EHUko ikertzaile profila</a></li>
+          <li><a href="https://github.com/jmigartua">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2011–2026 Josu M. Igartua · UPV/EHU · Content under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> unless noted · Theses are credited to their authors; grades are never published</span>
+      <span>Built with <a href="https://quarto.org">Quarto</a> · <a href="https://github.com/jmigartua/tfgs">Source</a></span>
+    </div>
+  </div>
+</footer>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/jmigartua\.github\.io\/tfgs-website\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="eu" xml:lang="eu"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Josu M. Igartua">
+
+<title>II. Zatia – Entregagarriaren (Txostena) Prestaketa · igartua / gral-tfg – igartua / gral-tfg</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+
+
+<link href="../../files/favicon-512.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-html-afe927e19676d0e50b1726048be49fb1.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<style>html{ scroll-behavior: smooth; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="../../assets/styles/theme.css">
+<meta property="og:title" content="II. Zatia – Entregagarriaren (Txostena) Prestaketa · igartua / gral-tfg">
+<meta property="og:image" content="https://jmigartua.github.io/tfgs-website/files/og-image.png">
+<meta property="og:site_name" content="igartua / gral-tfg">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:title" content="II. Zatia – Entregagarriaren (Txostena) Prestaketa · igartua / gral-tfg">
+<meta name="twitter:image" content="https://jmigartua.github.io/tfgs-website/files/og-image.png">
+<meta name="twitter:creator" content="@jmigartua">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body>
+
+<!-- Site header. Root-absolute hrefs are rewritten by Quarto to page-relative
+     links at render time, so this one partial works at the domain root and
+     under the /tfgs-website/ GitHub Pages sub-path alike. The three navs are
+     switched by <html lang> (set per directory in _metadata.yml) via CSS. -->
+<div class="topline"></div>
+<header class="site-head">
+  <div class="site-head__inner">
+    <a href="../../index.html" class="wordmark" data-lang="en">igartua<span class="accent"> / gral-tfg</span>
+      <span class="wordmark-sub">Bachelor's theses in Physics · Josu M. Igartua · UPV/EHU</span>
+    </a>
+    <a href="../../es/index.html" class="wordmark" data-lang="es">igartua<span class="accent"> / gral-tfg</span>
+      <span class="wordmark-sub">Trabajos de Fin de Grado en Física · Josu M. Igartua · UPV/EHU</span>
+    </a>
+    <a href="../../eu/index.html" class="wordmark" data-lang="eu">igartua<span class="accent"> / gral-tfg</span>
+      <span class="wordmark-sub">Fisikako Gradu Amaierako Lanak · Josu M. Igartua · UPV/EHU</span>
+    </a>
+    <nav class="site-nav" data-lang="en">
+      <a href="../../on-going/index.html">On going</a>
+      <a href="../../past-tfg/index.html">Past GrAL/TFG</a>
+      <a href="../../proposals/index.html">Proposals</a>
+      <a href="../../preparing/index.html">Preparing</a>
+      <span class="lang"><a href="../../index.html" class="current">en</a> <a href="../../es/index.html">es</a> <a href="../../eu/index.html">eu</a></span>
+    </nav>
+    <nav class="site-nav" data-lang="es">
+      <a href="../../es/on-going/index.html">En curso</a>
+      <a href="../../es/past-tfg/index.html">GrAL/TFG anteriores</a>
+      <a href="../../es/proposals/index.html">Propuestas</a>
+      <a href="../../es/preparing/index.html">Preparación</a>
+      <span class="lang"><a href="../../index.html">en</a> <a href="../../es/index.html" class="current">es</a> <a href="../../eu/index.html">eu</a></span>
+    </nav>
+    <nav class="site-nav" data-lang="eu">
+      <a href="../../eu/on-going/index.html">Martxan</a>
+      <a href="../../eu/past-tfg/index.html">Aurreko GrAL/TFGak</a>
+      <a href="../../eu/proposals/index.html">Proposamenak</a>
+      <a href="../../eu/preparing/index.html">Prestaketa</a>
+      <span class="lang"><a href="../../index.html">en</a> <a href="../../es/index.html">es</a> <a href="../../eu/index.html" class="current">eu</a></span>
+    </nav>
+  </div>
+</header>
+
+<header id="title-block-header">
+<h1 class="title">II. Zatia – Entregagarriaren (Txostena) Prestaketa</h1>
+
+</header>
+
+
+<h1 id="ii.-zatia-entregagarriaren-txostena-prestaketa">II. Zatia – Entregagarriaren (Txostena) Prestaketa</h1>
+<h2 id="gral-txostenaren-egitura-xehatua" class="anchored">2.1 GRAL Txostenaren Egitura Xehatua</h2>
+<p>Fisikako GRAL txosten ondo egituratu batek honako hauek izan behar ditu:</p>
+<h3 id="sarrera" class="anchored">Sarrera</h3>
+<ul>
+<li><strong>Motibazioa eta Testuingurua:</strong> Aurkeztu argi eta garbi aurrekari zientifikoak, garrantzia eta zure azterketaren motibazioa.</li>
+<li><strong>Ikerketa Galderak eta Helburuak:</strong> Adierazi esplizituki jorratu nahi dituzun ikerketa-galderak eta helburu espezifikoak.</li>
+<li><strong>Egituraren Ikuspegi Orokorra:</strong> Deskribatu laburki zure dokumentuaren antolaketa.</li>
+</ul>
+<h3 id="esparru-teorikoa" class="anchored">Esparru Teorikoa</h3>
+<ul>
+<li><strong>Literaturaren Berrikuspena:</strong> Aztertu kritikoki aurretiazko ikerketak, ekarpenak eta mugak nabarmenduz.</li>
+<li><strong>Funtsezko Kontzeptuak eta Teoriak:</strong> Definitu eta testuinguruan jarri argi eta garbi Fisikako teoria, eredu eta ekuazio garrantzitsuak.</li>
+</ul>
+<h3 id="metodologia" class="anchored">Metodologia</h3>
+<ul>
+<li><strong>Prozedura Esperimentalak:</strong> Eman konfigurazio esperimentalen, tresnen eta erabilitako materialen deskribapen zehatzak.</li>
+<li><strong>Eredu Konputazionalak:</strong> Azaldu argi eta garbi simulazioak, softwarea (Python, MATLAB, R), algoritmoak eta formulazio matematikoak.</li>
+<li><strong>Datu Bilketa Metodoak:</strong> Deskribatu datuak eskuratzeko eta kudeatzeko metodoak.</li>
+</ul>
+<h3 id="emaitzak" class="anchored">Emaitzak</h3>
+<ul>
+<li><strong>Datuen Aurkezpena:</strong> Erabili irudiak, taulak eta grafikoak zure aurkikuntzak argi eta garbi erakusteko.</li>
+<li><strong>Analisi Teknikak:</strong> Azaldu analisi-metodoak (proba estatistikoak, metodo konputazionalak).</li>
+</ul>
+<h3 id="eztabaida-eta-analisia" class="anchored">Eztabaida eta Analisia</h3>
+<ul>
+<li><strong>Interpretazioa:</strong> Lotu zure emaitzak jatorrizko ikerketa-galderekin, ereduak, anomaliak eta inplikazioak aztertuz.</li>
+<li><strong>Konparazioa:</strong> Konparatu kritikoki zure aurkikuntzak aurretiazko ikerketekin eta iragarpen teorikoekin.</li>
+</ul>
+<h3 id="ondorioa" class="anchored">Ondorioa</h3>
+<ul>
+<li><strong>Aurkikuntzen Laburpena:</strong> Laburtu argi eta garbi emaitza nagusiak eta Fisikaren arloan duten garrantzia.</li>
+<li><strong>Mugak eta Etorkizuneko Lana:</strong> Eztabaidatu muga metodologikoak eta iradoki etorkizuneko esploraziorako arloak.</li>
+</ul>
+<h3 id="bibliografia" class="anchored">Bibliografia</h3>
+<ul>
+<li><strong>IEEE Aipamen Araua:</strong> Formateatu erreferentzia guztiak IEEE jarraibideen arabera, zehaztasuna eta osotasuna bermatuz.</li>
+</ul>
+<h3 id="eranskinak" class="anchored">Eranskinak</h3>
+<ul>
+<li><strong>Material Osagarria:</strong> Sartu datu gehigarriak, kode konputazionaleko script-ak (argi eta garbi iruzkindutako Python edo R kodea), prozedura esperimentalak eta deribazio edo froga matematiko zehatzak.</li>
+</ul>
+<h2 id="idazketa-akademikoaren-jardunbide-egokiak" class="anchored">2.2 Idazketa Akademikoaren Jardunbide Egokiak</h2>
+<ul>
+<li><strong>Argitasuna eta Zehaztasuna:</strong> Mantendu fluxu logikoa eta koherentzia.</li>
+<li><strong>Idazketa Teknikoa:</strong> Definitu argi eta garbi termino espezializatu guztiak lehen aldiz erabiltzean; gutxitu anbiguotasuna.</li>
+<li><strong>Plagioa Saihestea:</strong> Parafraseatu eta aipatu iturriak behar bezala; erabili aipu zuzenak neurriz.</li>
+<li><strong>Zuzenketa eta Edizioa:</strong> Berrikusi aldizka eta eskatu ikaskideen iritzia; kontuan hartu Grammarly edo LanguageTool bezalako gramatika-egiaztapen tresnak.</li>
+</ul>
+<h2 id="ide-batekin-idaztea" class="anchored">2.3 IDE batekin Idaztea</h2>
+<h3 id="visual-studio-code-vs-code" class="anchored">Visual Studio Code (VS Code)</h3>
+<ul>
+<li><strong>Konfigurazioa:</strong> Instalatu VS Code eta funtsezko plugin-ak.</li>
+<li><strong>Produktibitaterako Plugin-ak:</strong> Markdown All-in-One, GitLens, LaTeX Workshop, Code Spell Checker, Prettier formatu koherenterako.</li>
+<li><strong>IDE Alternatiboak:</strong> RStudio, Positron eta idazketa zientifikorako dituzten ezaugarri espezifikoen sarrera laburra.</li>
+</ul>
+<h2 id="quarto-ekosistema" class="anchored">2.4 Quarto Ekosistema</h2>
+<ul>
+<li><strong>Quarto-ra Sarrera:</strong> Markdown eta kode exekutagarria konbinatzen dituen idazketa akademikorako tresna integratua.</li>
+<li><strong>Txostenak Idaztea:</strong> Python edo R kode-zatiak txertatzeko eta exekutatzeko urratsez urratseko orientazioa.</li>
+<li><strong>Esportazio Formatuak:</strong> Sortu irteera profesionalak PDF (LaTeX txantiloiak), HTML edo web formatu interaktiboetan.</li>
+</ul>
+<h2 id="bertsio-kontrola" class="anchored">2.5 Bertsio Kontrola</h2>
+<ul>
+<li><strong>Git Oinarriak:</strong> Git biltegiak konfiguratzeko, aldaketak egiteko (commit), adarrak sortzeko eta bat egiteko urratsez urratseko gida.</li>
+<li><strong>Lankidetza Lan-fluxua:</strong> GitHub erabiltzeko jardunbide egokiak ikaskideen lankidetzarako eta bertsioen segurtasun-kopiarako.</li>
+<li><strong>VS Code-rekin Integrazioa:</strong> Zure IDE barruan bertsio-kontrolaren ezaugarriak erabiltzea zure proiektuaren berrikuspenak modu errazean kudeatzeko.</li>
+</ul>
+<h2 id="inguruneak-eta-exekuzioa" class="anchored">2.6 Inguruneak eta Exekuzioa</h2>
+<ul>
+<li><strong>Ingurune Birtualak:</strong> Python (<code>venv</code>, <code>conda</code>) edo R (<code>renv</code>) inguruneak sortzeko eta kudeatzeko argibideak.</li>
+<li><strong>Plataforma Anitzeko Erreproduzigarritasuna:</strong> Zure proiektua Windows, macOS eta Linux-en ondo funtzionatzen duela ziurtatzeko estrategiak.</li>
+<li><strong>Mendekotasunen Kudeaketa:</strong> Zure ingurune konputazionala plataforma desberdinetan zehaztasunez dokumentatzeko (<code>requirements.txt</code>, <code>environment.yml</code>) eta erreproduzitzeko teknikak.</li>
+</ul>
+<p>∞¬÷</p>
+<h1 id="ii.-zatia-entregagarriaren-txostena-prestaketa-1">II. Zatia – Entregagarriaren (Txostena) Prestaketa</h1>
+<h2 id="gral-txostenaren-egitura-xehatua-1" class="anchored">2.1 GRAL Txostenaren Egitura Xehatua</h2>
+<p>Fisikako GRAL txosten eraginkor batek irakurleak argi eta garbi gidatuko ditu zure ikerketan zehar, sarreratik ondorioetara. Hasi zure txostena motibazioa eta testuingurua aurkeztuz, argi eta garbi azalduz zergatik den garrantzitsua zure azterketa Fisikaren eremu zabalagoan. Aurkeztu zure ikerketa-galderak eta helburu espezifikoak, zehazki zer ikertu edo lortu nahi duzun adieraziz. Eman irakurleei zure dokumentuaren egituraren ikuspegi orokor laburra, atal bakoitzak zer eduki biltzen duen argituz.</p>
+<p>Esparru teorikoaren atalean, egin literaturaren berrikuspen sakon eta kritikoa, zure ikerketari dagozkion aurretiazko azterlanak zehaztuz. Nabarmendu argi eta garbi ekarpenak, identifikatu mugak eta adierazi zure ikerketak hutsune horiei nola aurre egin nahi dien. Definitu eta testuinguruan jarri funtsezko kontzeptu fisikoak, teoriak eta ereduak, zure irakurlea zure analisiaren gainerakoan zehar gidatuko duen oinarri sendo bat ezarriz.</p>
+<p>Zure metodologiak zehatz-mehatz dokumentatu behar du zure ikerketa-ikuspegia, esperimentala, teorikoa edo konputazionala izan. Esperimentuak egiten badituzu, eman zure konfigurazioen deskribapen argi eta zehatza, tresneria, kalibrazioa eta neurketa-prozedurak barne. Ikerketa konputazionalerako, azaldu zure ereduak argi eta garbi, erabilitako software espezifikoa (hala nola Python, MATLAB edo R), inplementatutako algoritmoak eta erabilitako formulazio matematikoak aipatuz. Gainera, adierazi argi eta garbi zure datu-bilketa metodoak, zure ikerketan zehar datuak nola eskuratu, prozesatu eta kudeatu dituzun deskribatuz.</p>
+<p>Emaitzen atalak zure aurkikuntzak argi eta logikoki aurkeztu behar ditu. Erabili taulak, irudiak eta grafikoak eraginkortasunez zure datuak laburtzeko eta bisualki ilustratzeko. Elementu bisual bakoitza arretaz etiketatu behar da eta testutik independenteki ulergarria egiten duen oin-ohar deskribatzaile batekin lagundu. Zehaztu eta justifikatu aukeratutako datu-analisirako metodoak, erabilitako proba estatistikoak edo teknika konputazionalak barne.</p>
+<p>Eztabaida eta analisiaren atalean, interpretatu zure emaitzak modu integralean, esplizituki lotuz zure ikerketa-galderekin eta esparru teorikoarekin. Arakatu identifikatutako eredu edo anomaliak, azalpen argiak emanez eta zure aurkikuntzak aurretiaz ezarritako teoriekin eta emaitza enpirikoekin lotuz. Konparatu eta kontrastatu zure emaitzak kritikoki aurretiazko ikerketekin, bai berrespenak bai desadostasunak eztabaidatuz.</p>
+<p>Amaitu zure txostena emaitza nagusiak laburki laburtuz eta Fisikan duten garrantzia eta esanahia azpimarratuz. Eztabaidatu esplizituki zure ikerketan aurkitutako mugak, zintzotasunez hausnartuz muga metodologikoen edo balizko alborapenen inguruan. Adierazi argi eta garbi etorkizuneko ikerketarako iradokizunak, zure proiektuak ireki edo erantzun gabe utzi dituen arloak edo galderak zehaztuz.</p>
+<p>Ziurtatu zure bibliografiak zorrotz betetzen dituela IEEE aipamen-arauak, iturri guztien erreferentzietan osotasuna eta zehaztasuna egiaztatuz. Sartu material osagarri garrantzitsuak eranskinetan, hala nola kalkulu zehatzak, kode konputazionaleko script-ak (argi eta garbi iruzkinduta eta egituratuta), datu esperimental gordinak eta azalpen metodologiko hedatuak.</p>
+<h2 id="idazketa-akademikoaren-jardunbide-egokiak-1" class="anchored">2.2 Idazketa Akademikoaren Jardunbide Egokiak</h2>
+<p>Fisikako kalitate handiko idazketa akademikoak argitasuna, zehaztasuna eta koherentzia logikoa eskatzen ditu. Idatzi argi eta garbi, zure argudioak logikoki egituratuz ulermena errazteko. Saihestu beharrezkoa ez den konplexutasuna edo anbiguotasuna, termino espezializatu guztiak argi eta garbi definituz lehen aldiz aurkezten direnean. Bete zorrotz IEEE aipamen-gidalerroak, iturri guztiak zehaztasunez eta koherentziaz aipatzen direla ziurtatuz, ekarpenak behar bezala aitortzeko eta plagioa saihesteko.</p>
+<p>Gutxitu jargoia, zure xede-irakurle akademikoen mailari dagokion hizkuntza zehatza erabiliz. Zuzendu aldizka zure eskuizkribua irakurgarritasuna, argitasuna eta zehaztasuna hobetzeko. Eskatu iritzia ikaskideei edo zure zuzendariari, kritika eraikitzaileak integratuz zure lanaren zorroztasuna eta argitasuna hobetzeko. Erabili Grammarly edo LanguageTool bezalako gramatika-egiaztapen tresnak baliabide gehigarri gisa, ahaztutako akatsak edo esaldi anbiguoak identifikatzeko.</p>
+<h2 id="ide-batekin-idaztea-1" class="anchored">2.3 IDE batekin Idaztea</h2>
+<p>Visual Studio Code (VS Code) oso gomendagarria da kodeketa eta idazketa eraginkortasunez integratzeko. Hasi VS Code bere webgune ofizialetik instalatzen, eta ondoren pertsonalizatu zure konfigurazioa funtsezko plugin-ekin produktibitatea optimizatzeko. Markdown All-in-One, GitLens, LaTeX Workshop, Code Spell Checker eta Prettier bezalako plugin-ek formatu koherentea, argitasuna eta antolaketa mantentzen laguntzen dizute idazketa-prozesu osoan zehar.</p>
+<p>RStudio edo Positron bezalako IDE alternatiboak ere onuragarriak izan daitezke zure behar espezifikoen arabera, batez ere zure proiektuak analisi estatistiko zabala edo R-n oinarritutako simulazioak baditu. Arakatu laburki haien indarguneak eta kontuan hartu zure proiektuaren eskakizun espezifikoekin bat datorren IDE bat aukeratzea.</p>
+<h2 id="quarto-ekosistema-1" class="anchored">2.4 Quarto Ekosistema</h2>
+<p>Quarto idazketa akademikorako tresna oso indartsua da, Markdown eta kode exekutagarriko zatiak ezin hobeto integratzen dituena. Quartok txosten integral eta erreproduzigarriak idaztea errazten du, zure prozesu analitikoen dokumentazio argia ahalbidetuz testu narratiboarekin batera. Txertatu eta exekutatu Python, R edo Julia kodea zuzenean zure txostenetan emaitzak, irudiak eta analisiak dinamikoki sortzeko, erreproduzigarritasuna eta gardentasuna hobetuz.</p>
+<p>Erabili Quartoren esportazio-funtzionalitate polifazetikoak kalitate profesionaleko dokumentuak ahaleginik gabe sortzeko hainbat formatutan, hala nola PDF pertsonalizatutako LaTeX txantiloiak erabiliz, HTML web-eduki interaktiboetarako edo dokumentu interaktibo dinamikoak. Quartoren ikuspegi integratuak asko errazten du irteera akademiko argiak, erreproduzigarriak eta bisualki erakargarriak sortzeko prozesua.</p>
+<h2 id="bertsio-kontrola-1" class="anchored">2.5 Bertsio Kontrola</h2>
+<p>Bertsio-kontrolaren erabilera eraginkorra, bereziki Git, ezinbestekoa da zure GRAL proiektua eraginkortasunez kudeatzeko. Konfiguratu Git biltegi bat proiektuaren hasieran aldaketak kudeatzeko, aurrerapena argi eta garbi jarraitzeko eta beharrezkoa bada aurreko bertsioetara itzultzeko. Egin aldaketen commit-ak aldizka mezu esanguratsuekin, egindako eguneraketak edo doikuntzak argi eta garbi adieraziz. Kudeatu proiektuaren aldakuntzak eta esperimentuak adar bereiziak erabiliz, adar nagusiarekin bat eginez egiaztatu eta onartu ondoren.</p>
+<p>Lankidetzan aritu eraginkortasunez ikaskideekin edo zure zuzendariarekin GitHub erabiliz; horrek talde-lan leuna, gatazken konponbidea eta proiektuaren bertsioen segurtasun-kopia errazten ditu. Git zure IDEan integratzeak (VS Code adibidez) bertsioen kudeaketa are gehiago errazten du, zure berrikuspenen eta lankidetza-lan-fluxuen jarraipena zuzenean zure edizio-ingurunetik ahalbidetuz.</p>
+<h2 id="inguruneak-eta-exekuzioa-1" class="anchored">2.6 Inguruneak eta Exekuzioa</h2>
+<p>Zure ingurune konputazionalaren erreproduzigarritasuna eta koherentzia bermatzea ezinbestekoa da zure GRALaren sinesgarritasunerako. Ezarri ingurune birtual isolatuak Python (<code>venv</code>), Conda edo R (<code>renv</code>) erabiliz, software-bertsioen eta mendekotasunen kontrol argia mantentzeko. Zure konfigurazio konputazionalaren dokumentazio zehatza, <code>requirements.txt</code> edo <code>environment.yml</code> bezalako fitxategiak erabiliz, kritikoa da zure analisia plataforma informatiko desberdinetan erreproduzitzeko.</p>
+<p>Berretsi zure ingurune konputazionalak fidagarritasunez funtzionatzen duela Windows, macOS eta Linux-en, sistema desberdinetan ondo probatuz. Dokumentatu argi eta garbi instalazio-prozedurak, ingurune-konfigurazioak eta mendekotasunak. Alderdi horiek modu proaktiboan kudeatzeak bermatzen du ebaluatzaileek edo etorkizuneko ikertzaileek zure emaitzak zehaztasunez eta fidagarritasunez erreplikatu ahal izango dituztela.</p>
+
+
+<footer class="site-foot">
+  <div class="site-foot__inner">
+    <div class="foot-grid" data-lang="en">
+      <div class="foot-about">
+        <h4 class="anchored">igartua / gral-tfg</h4>
+        <p>Bachelor's theses (Gradu Amaierako Lanak / Trabajos de Fin de Grado) in Physics
+           supervised by Josu M. Igartua at the Faculty of Science and Technology,
+           University of the Basque Country (UPV/EHU), Leioa.</p>
+        <div class="cite-block">Josu M. Igartua Aldamiz · Physics Department, UPV/EHU<br>
+           josu.igartua@ehu.eus · ORCID 0000-0001-7983-5331</div>
+      </div>
+      <div>
+        <h4 class="anchored">Theses</h4>
+        <ul>
+          <li><a href="../../past-tfg/index.html">Past GrAL/TFG</a></li>
+          <li><a href="../../on-going/index.html">On going</a></li>
+          <li><a href="../../proposals/index.html">Proposals</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="anchored">For students</h4>
+        <ul>
+          <li><a href="../../preparing/index.html">Preparation manual</a></li>
+          <li><a href="../../preparing/part_01_01.html">Developing the project</a></li>
+          <li><a href="../../preparing/part_02_01.html">Writing the report</a></li>
+          <li><a href="../../preparing/part_03_01.html">Presentation and defence</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="anchored">Connect</h4>
+        <ul>
+          <li><a href="mailto:josu.igartua@ehu.eus">Email</a></li>
+          <li><a href="https://scholar.google.com/citations?user=nYJ--CkAAAAJ">Google Scholar</a></li>
+          <li><a href="https://ekoizpen-zientifikoa.ehu.eus/investigadores/128210/detalle">UPV/EHU research profile</a></li>
+          <li><a href="https://github.com/jmigartua">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-grid" data-lang="es">
+      <div class="foot-about">
+        <h4 class="anchored">igartua / gral-tfg</h4>
+        <p>Trabajos de Fin de Grado (Gradu Amaierako Lanak) en Física dirigidos por
+           Josu M. Igartua en la Facultad de Ciencia y Tecnología de la
+           Universidad del País Vasco (UPV/EHU), Leioa.</p>
+        <div class="cite-block">Josu M. Igartua Aldamiz · Departamento de Física, UPV/EHU<br>
+           josu.igartua@ehu.eus · ORCID 0000-0001-7983-5331</div>
+      </div>
+      <div>
+        <h4 class="anchored">Trabajos</h4>
+        <ul>
+          <li><a href="../../es/past-tfg/index.html">GrAL/TFG anteriores</a></li>
+          <li><a href="../../es/on-going/index.html">En curso</a></li>
+          <li><a href="../../es/proposals/index.html">Propuestas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="anchored">Para estudiantes</h4>
+        <ul>
+          <li><a href="../../es/preparing/index.html">Manual de preparación</a></li>
+          <li><a href="../../preparing/index.html">Manual completo (en inglés)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="anchored">Contacto</h4>
+        <ul>
+          <li><a href="mailto:josu.igartua@ehu.eus">Correo</a></li>
+          <li><a href="https://scholar.google.com/citations?user=nYJ--CkAAAAJ">Google Scholar</a></li>
+          <li><a href="https://ekoizpen-zientifikoa.ehu.eus/investigadores/128210/detalle">Perfil investigador UPV/EHU</a></li>
+          <li><a href="https://github.com/jmigartua">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-grid" data-lang="eu">
+      <div class="foot-about">
+        <h4 class="anchored">igartua / gral-tfg</h4>
+        <p>Josu M. Igartuak Euskal Herriko Unibertsitateko (UPV/EHU) Zientzia eta
+           Teknologia Fakultatean (Leioa) zuzendutako Fisikako Gradu Amaierako Lanak.</p>
+        <div class="cite-block">Josu M. Igartua Aldamiz · Fisika Saila, UPV/EHU<br>
+           josu.igartua@ehu.eus · ORCID 0000-0001-7983-5331</div>
+      </div>
+      <div>
+        <h4 class="anchored">Lanak</h4>
+        <ul>
+          <li><a href="../../eu/past-tfg/index.html">Aurreko GrAL/TFGak</a></li>
+          <li><a href="../../eu/on-going/index.html">Martxan</a></li>
+          <li><a href="../../eu/proposals/index.html">Proposamenak</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="anchored">Ikasleentzat</h4>
+        <ul>
+          <li><a href="../../eu/preparing/index.html">Prestaketa eskuliburua</a></li>
+          <li><a href="../../eu/preparing/part_01_01.html">Proiektuaren garapena</a></li>
+          <li><a href="../../eu/preparing/part_02_01.html">Txostena idaztea</a></li>
+          <li><a href="../../eu/preparing/part_03_01.html">Aurkezpena eta defentsa</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="anchored">Harremana</h4>
+        <ul>
+          <li><a href="mailto:josu.igartua@ehu.eus">Posta</a></li>
+          <li><a href="https://scholar.google.com/citations?user=nYJ--CkAAAAJ">Google Scholar</a></li>
+          <li><a href="https://ekoizpen-zientifikoa.ehu.eus/investigadores/128210/detalle">UPV/EHUko ikertzaile profila</a></li>
+          <li><a href="https://github.com/jmigartua">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2011–2026 Josu M. Igartua · UPV/EHU · Content under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> unless noted · Theses are credited to their authors; grades are never published</span>
+      <span>Built with <a href="https://quarto.org">Quarto</a> · <a href="https://github.com/jmigartua/tfgs">Source</a></span>
+    </div>
+  </div>
+</footer>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/jmigartua\.github\.io\/tfgs-website\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

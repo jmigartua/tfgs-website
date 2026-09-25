@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="eu" xml:lang="eu"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Josu M. Igartua">
+
+<title>V. Zatia – Aholkuak, Kontrol-zerrendak eta Gehigarriak · igartua / gral-tfg – igartua / gral-tfg</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+
+
+<link href="../../files/favicon-512.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-html-afe927e19676d0e50b1726048be49fb1.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<style>html{ scroll-behavior: smooth; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="../../assets/styles/theme.css">
+<meta property="og:title" content="V. Zatia – Aholkuak, Kontrol-zerrendak eta Gehigarriak · igartua / gral-tfg">
+<meta property="og:image" content="https://jmigartua.github.io/tfgs-website/files/og-image.png">
+<meta property="og:site_name" content="igartua / gral-tfg">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:title" content="V. Zatia – Aholkuak, Kontrol-zerrendak eta Gehigarriak · igartua / gral-tfg">
+<meta name="twitter:image" content="https://jmigartua.github.io/tfgs-website/files/og-image.png">
+<meta name="twitter:creator" content="@jmigartua">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body>
+
+<!-- Site header. Root-absolute hrefs are rewritten by Quarto to page-relative
+     links at render time, so this one partial works at the domain root and
+     under the /tfgs-website/ GitHub Pages sub-path alike. The three navs are
+     switched by <html lang> (set per directory in _metadata.yml) via CSS. -->
+<div class="topline"></div>
+<header class="site-head">
+  <div class="site-head__inner">
+    <a href="../../index.html" class="wordmark" data-lang="en">igartua<span class="accent"> / gral-tfg</span>
+      <span class="wordmark-sub">Bachelor's theses in Physics · Josu M. Igartua · UPV/EHU</span>
+    </a>
+    <a href="../../es/index.html" class="wordmark" data-lang="es">igartua<span class="accent"> / gral-tfg</span>
+      <span class="wordmark-sub">Trabajos de Fin de Grado en Física · Josu M. Igartua · UPV/EHU</span>
+    </a>
+    <a href="../../eu/index.html" class="wordmark" data-lang="eu">igartua<span class="accent"> / gral-tfg</span>
+      <span class="wordmark-sub">Fisikako Gradu Amaierako Lanak · Josu M. Igartua · UPV/EHU</span>
+    </a>
+    <nav class="site-nav" data-lang="en">
+      <a href="../../on-going/index.html">On going</a>
+      <a href="../../past-tfg/index.html">Past GrAL/TFG</a>
+      <a href="../../proposals/index.html">Proposals</a>
+      <a href="../../preparing/index.html">Preparing</a>
+      <span class="lang"><a href="../../index.html" class="current">en</a> <a href="../../es/index.html">es</a> <a href="../../eu/index.html">eu</a></span>
+    </nav>
+    <nav class="site-nav" data-lang="es">
+      <a href="../../es/on-going/index.html">En curso</a>
+      <a href="../../es/past-tfg/index.html">GrAL/TFG anteriores</a>
+      <a href="../../es/proposals/index.html">Propuestas</a>
+      <a href="../../es/preparing/index.html">Preparación</a>
+      <span class="lang"><a href="../../index.html">en</a> <a href="../../es/index.html" class="current">es</a> <a href="../../eu/index.html">eu</a></span>
+    </nav>
+    <nav class="site-nav" data-lang="eu">
+      <a href="../../eu/on-going/index.html">Martxan</a>
+      <a href="../../eu/past-tfg/index.html">Aurreko GrAL/TFGak</a>
+      <a href="../../eu/proposals/index.html">Proposamenak</a>
+      <a href="../../eu/preparing/index.html">Prestaketa</a>
+      <span class="lang"><a href="../../index.html">en</a> <a href="../../es/index.html">es</a> <a href="../../eu/index.html" class="current">eu</a></span>
+    </nav>
+  </div>
+</header>
+
+<header id="title-block-header">
+<h1 class="title">V. Zatia – Aholkuak, Kontrol-zerrendak eta Gehigarriak</h1>
+
+</header>
+
+
+<h1 id="v.-zatia-aholkuak-kontrol-zerrendak-eta-gehigarriak">V. Zatia – Aholkuak, Kontrol-zerrendak eta Gehigarriak</h1>
+<h2 id="azken-gralaren-kontrol-zerrenda" class="anchored">5.1 Azken GRALaren Kontrol-zerrenda</h2>
+<p>Zure GRALa bidali eta defentsara joan aurretik, lagungarria da azken <strong>kontrol-zerrenda</strong> bat egitea ezer ez dela ahaztu ziurtatzeko. Hona hemen amaierako faseko kontrol-zerrenda integrala:</p>
+<ul>
+<li><strong>Edukiaren Osotasuna:</strong> Kapitulu guztiak (Sarreratik Ondoriora) idatzita eta osatuta daude. Egiaztatu Sarreran adierazitako helburu guztiak Emaitzetan/Eztabaidan jorratzen direla, eta planteatutako galdera guztiak Ondorioan erantzuten direla. Ziurtatu ez duzula “EGIN BEHARREKOA” oharrik edo leku-markako testurik utzi dokumentuan.</li>
+<li><strong>Formatua eta Gidalerroak:</strong> Egiaztatu zure tesiak zure unibertsitateko formatu-eskakizunak betetzen dituela (marjinak, letra-tamaina, lerro-tartea, orrialde-zenbaketa) eta beharrezko atal guztiak biltzen dituela (izenburua, laburpena, eskerrak, aurkibidea, irudi/taulen zerrenda beharrezkoa bada, erreferentziak, eranskinak). Erabili txantiloi ofiziala ematen bada. Egiaztatu koherentzia: irudi-oin guztiak berdin estilotuta al daude? Ekuazioak ondoz ondo zenbakituta eta behar bezala aipatuta al daude?</li>
+<li><strong>Hizkuntzaren Zuzenketa:</strong> Egin ortografia eta gramatika zuzenketa sakona. Lagungarria da testua <strong>ozenki</strong> irakurtzea edo testutik hizketarako tresna bat erabiltzea – zure belarriak zure begiak saltatu ditzakeen esaldi baldarrak edo luzeegiak harrapatzen ditu. Zuzendu argi ez dauden esaldiak. Ziurtatu terminologia koherentziaz erabiltzen dela. Egiaztatu aldagai-sinbolo guztiak lehen aldiz erabiltzen direnean definitzen direla eta notazio koherentea erabiltzen duzula.</li>
+<li><strong>Zehaztasun Teknikoa:</strong> Egiaztatu kalkulatutako balio, unitate eta zifra esanguratsu guztiak. Begiratu tesiko emaitza bakoitza eta jarraitu datu gordinetara edo kodera zuzena dela baieztatzeko. Ziurtatu errore-barrak eta ziurgabetasunak behar bezala kalkulatzen eta adierazten direla. Berretsi grafikoetako ardatz guztiak kantitatearekin eta unitateekin etiketatuta daudela. Ziurtatu testuko irudi, taula edo ekuazioen erreferentziak elementu horien zenbakiekin bat datozela.</li>
+<li><strong>Erreferentzien Egiaztapena:</strong> Ziurtatu testuko aipamen bakoitza erreferentzia-zerrendan agertzen dela eta alderantziz. Egiaztatu erreferentzia-formatuaren koherentzia. Egiaztatu erreferentzia batzuen izenburuen, egileen eta urtearen zuzentasuna. Ziurtatu parafraseatu duzun edozein iturri esaldi horren amaieran aipatzen dela. Zerbait zuzenean aipatu baduzu, ziurtatu komatxo artean dagoela eta orrialde-zenbakiarekin behar bezala aipatuta dagoela. Berretsi jatorriz zureak ez diren irudi/datu guztien kreditua eman duzula.</li>
+<li><strong>Segurtasun-kopia eta Bertsioak:</strong> Sortu tesi-fitxategi eta datu guztien azken segurtasun-kopia bat. Idealki, bertsio-kontrola (Git) eta/edo hodeiko biltegiratzea erabiltzen aritu zara, beraz, hau eginda dago. Baina hala ez bada, <strong>egin orain</strong> – kopiatu dena leku seguru batera. Honek azken orduko ordenagailu-hutsegiteen aurka babesten du eta zure lana etorkizunerako gordetzen du.</li>
+<li><strong>Bidalketa Eskakizunak:</strong> Egiaztatu bidalketa-gidalerroak: inprimatutako kopia bat edo PDF bat bidali behar duzu? Inprimaki edo sinadurarik behar al da? Ziurtatu horiek aldez aurretik lortzen dituzula. Plagio-txostena edo aitorpena beharrezkoa bada, pasatu zure tesia beharrezko softwaretik edo erantsi aitorpena. Ziurtatu PDFaren metadatuak (egilea, izenburua) behar bezala ezarrita daudela liburutegiak behar baditu.</li>
+<li><strong>Inprimatze Kalitatea (inprimatzen bada):</strong> Kopia fisikoak inprimatu behar badituzu, berrikusi PDFa inprimatze-aurrebistan. Egiaztatu irudietako koloreak bereizgarriak direla gris-eskalan zuri-beltzean inprimatzen bada. Inprimatu probako orri bat (batez ere grafiko edo ekuazio asko dituen orri bat) letra-tipo eta sinbolo guztiak ondo ateratzen diren ikusteko. Ziurtatu orrialde-marjinak inprimatzeko seguruak direla. Planifikatu inprimatze- eta koadernatze-denbora; ez egin azken unean inprimagailuaren arazoak egon daitezkeelako.</li>
+<li><strong>Defentsa Prestaketa:</strong> Dokumentuaz gain, prestatu zure aurkezpena (ikus III. Zatia) eta <strong>ezagutu zure tesia</strong>. Begiratu zure tesia eta pentsatu balizko galderetan: Ba al dago norbaitek zalantzan jar dezakeen puntu ahulik? Justifikatzeko prest egon beharko zenukeen hipotesirik egin al duzu? Idatzi balizko galderen zerrenda bat eta formulatu nola erantzungo zenukeen. Honek galdera-erantzunetarako praktika on gisa ere balio du.</li>
+<li><strong>Zuzendariaren Onarpena:</strong> Ahal bada, lortu zure zuzendariaren azken oniritzia. Xehetasun txikiren bat harrapatu dezakete edo azken iradokizun bat izan. Ziurrenik dagoeneko ikusi dute, baina azken oniritzi-mezu elektroniko batek lasaitasuna eman dezake.</li>
+<li><strong>Behar Fisikoak:</strong> Defentsa-egunerako, prestatu edozein elementu: inprimatu zure diapositiben edo tesiaren kopiak zuretzat (oharrekin behar izanez gero), eraman laser-erakuslea, egokitzaileak zure ordenagailu eramangarrirako bat erabiltzen baduzu (HDMI/VGA), eta egin zure aurkezpenaren segurtasun-kopia USB batean. Antolatu gela ahal baduzu. Funtsean, aurkezpen-logistikarako mini-kontrol-zerrenda bat: “Ordenagailu eramangarria eta kargagailua; Bideo-egokitzailea; Diapositiba-klikatzailea bateria berriarekin; Ura; Inprimatutako oharrak; Arbelerako errotuladorea.”</li>
+<li><strong>Pentsamoldearen Egiaztapena:</strong> Gogoratu lortutakoa eta egon harro. Pentsamolde positiboak antsietatea murrizten du. Jakin ezazu ahalik eta prestatuen zaudela.</li>
+</ul>
+<p>Kontrol-zerrenda hau sistematikoki aztertzeak bidalketa/defentsa baino egun bat edo bi lehenago funtsezko elementurik falta ez dela ziurtatzen du. Sorkuntza-modutik kalitate-kontrol modura pasatzen laguntzen du, idazketan murgilduta zinenean ahaztutako gauzak harrapatuz. Elementu bakoitza markatuz, konfiantzaz bidali eta aurkez dezakezu, dena ordenan dagoela jakinda.</p>
+<h2 id="ohiko-akatsak" class="anchored">5.2 Ohiko Akatsak</h2>
+<p>GRAL prozesuan zehar, zenbait oztopo ohikoak dira ikasleen artean. Horien berri izateak horiek saihesten edo zuzentzen lagun zaitzake zure lanean antzematen badituzu:</p>
+<ul>
+<li><p><strong>Denboraren Kudeaketa Txarra eta Atzerapena:</strong> Akats ohikoenetako bat behar den denbora gutxiestea da, batez ere idazketarako. Ikasle batzuk <em>beranduegi hasten dira</em> idazten, tesi-idazketaren zatirik handiena azken asteetarako utziz. Horrek presazko edukia, analisi ahulagoa edo edizio zabarra dakar. Idealki, hasi goiz idazten – idatzi literaturaren berrikuspena edo metodoak bezalako atalak aurrera egin ahala, emaitza guztiak lortu arte itxaron beharrean. Kontrako muturrak, <em>goizegi hasteak</em> datu edo argitasun nahikorik gabe, denbora ere gal dezake. Bilatu oreka: planifikatu zure kronograma (I.3 Zatia) eta eutsi horri. Erabili bitarteko epeak. Saihestu “azken astean gau osoan lan egitea” – kalitatean nabaritzen da eta defentsa baino lehen erre egingo zaitu.</p></li>
+<li><p><strong>Zure Zuzendaria Nahikoa Ez Inplikatzea:</strong> Ikasle batzuk isolamenduan lan egiten dute eta <em>ez dute aldizkako iritzirik bilatzen</em>. Zure zuzendaria funtsezko baliabidea da – beraiek ez eguneratzeak edo galderarik ez egiteak bide okerretatik denbora gehiegi galtzea ekar dezake. Akatsa da laguntza eskatzeak gaizki islatuko duela pentsatzea; zuzendariek zu gidatzea espero dute. Elkartu edo bidali mezu elektronikoak aldizka. Erakutsi emaitza partzialak edo zirriborro-atalak. Gaizkiulertuak goiz harrapatu ditzakete. Haiek ez inplikatzeak ezusteko desatseginak ekar ditzake bidalketatik gertu. Gainera, sartu haien iritzia berehala; ez alde batera utzi iradokizunak harrotasunagatik edo inertziagatik. Gogoratu, kanpoko ikuspegiak zure lanaren kalitatea hobetzen duela.</p></li>
+<li><p><strong>Segurtasun-kopia eta Bertsio Kontrola Alde Batera Uztea:</strong> <em>Segurtasun-kopia praktika txarrak</em> zoritxarrez ohikoak dira. Ikasle batzuek tesia ordenagailu eramangarri bakarrean edo USB unitate bakarrean gordetzen dute. Hardwareak huts egiten du, fitxategiak hondatzen dira edo garrantzitsua den fitxategi bat ustekabean gainidatzi dezakezu. Bertsio-kontrola ez erabiltzea (edo gutxienez fitxategi-bertsio sekuentzialak) beste akats bat da. Irtenbidea: erabili Git (eztabaidatu bezala) edo gutxienez sistematikoki gorde bertsioak. Eta erabili hodeiko biltegiratzea edo kanpoko unitateak segurtasun-kopiarako. Egin ohitura egunero segurtasun-kopia egitea.</p></li>
+<li><p><strong>Ikerketan Arreta Gehiegi, Idazketan Gutxiegi:</strong> Ikasle batzuek denbora guztia esperimentuetan edo kodeketan ematen dute eta idazketa azken unera arte atzeratzen dute. Horrek askotan <em>tesi-testu osatugabea edo kalitate baxukoa</em> dakar. Tesia ebaluatzen eta artxibatzen dena da – ikerketa bera bezain garrantzitsua da. Orekatu zure denbora ondo idatzitako dokumentu bat sortzeko. Alderantziz, emaitzarik gabe <em>goizegi idazteak</em> berridazketa handiak ekar ditzake geroago, baina seguruagoa da goiz idaztea eta berrikustea ezer ez idaztea baino. Lotutako akats bat zuzenketarako eta ediziorako denborarik ez esleitzea da. Planifikatu gutxienez astebete ediziorako zure kronograman. Begi freskoek zure testuan hutsune logikoak edo hizkuntza iluna harrapatuko dituzte.</p></li>
+<li><p><strong>Argitasun eta Kohesio Falta:</strong> Amaitzeko presan, ikasleek koherentea ez den tesi bat sor dezakete – adibidez, kapituluak deskonektatuta sentitzen dira, edo adierazitako helburuak ez datoz bat ondorioekin. Beste arazo bat irakurlearengandik ezagutza gehiegi suposatzea da: akronimoak ez azaltzea, arrazoibidean urratsak saltatzea – tesia jarraitzea zailduz. Hori saihesteko, berrikusi zure tesia xehetasunak ezagutzen ez dituen irakurle bat bazina bezala. Termino guztiak azalduta al daude? Istorioa (arazoa-&gt;metodoa-&gt;emaitza-&gt;ondorioa) argia al da? Argitasun-akats ohikoen artean esaldi eta paragrafo luzeegiak, ahots pasiboaren gehiegizko erabilera edo ekuazioetan sinboloak ez definitzea daude. Irtenbidea: hautsi esaldi luzeak, ziurtatu paragrafo bakoitzak ideia nagusi bat duela, eta irakurri zure tesia kritikoki.</p></li>
+<li><p><strong>Formatua eta Bidalketa Gidalerroak Ez Ikusiarena Egitea:</strong> Batzuek formatua hutsaltzat jotzen dute eta gero puntuak galtzen dituzte edo azken orduko estresa izaten dute marjinak oker daudelako edo atalak desordenatuta daudelako. Adibidez, laburpen bat sartzea ahaztea edo orrialdeak behar bezala ez zenbakitzea. Egiaztatu beti kontrol-zerrenda edo txantiloi ofiziala. Beste adibide bat: PDFan letra-tipoak ez txertatzea. Edo fitxategi-formatu okerra bidaltzea. Akats txiki hauek batzuetan atzerapen administratiboak eragin ditzakete. Egiaztatu birritan bidalketarako argibide guztiak jarraitu dituzula.</p></li>
+<li><p><strong>Diapositibak Gainkargatzea edo Defentsa Prestaketa Presaka Egitea:</strong> Aurkezpenaren aldean, akats ohikoak diapositibak lanpetuegi egitea (testu edo datu gehiegi) eta <em>hitzaldia nahikoa ez praktikatzea</em> dira. Ikasle askok defentsa gutxiesten dute – tesi-idazketan zentratzen dira eta aurkezpena azken unean egiten dute. Horrek hitzaldi inkoherentea, denboraz kanpokoa edo galderak ondo erantzuteko ezintasuna ekar dezake. Beste akats bat diapositibetatik edo gidoitik irakurtzea da, eta horrek audientzia deskonektatzen du. Hori saihesteko: eskaini denbora aurkezpen zehatz bat lantzeko (III.1 Zatia), eta <strong>entseatu</strong> hainbat aldiz. Nabaria da aztertzaileentzat nork ez duen praktikatu. Gainera, litekeena den galderak ez aurreikustea akats bat da – tesian puntu ahul bat gainetik pasatu baduzu, espero galdetzea; prestatu azalpen bat.</p></li>
+<li><p><strong>Kritikaren Aurrean Defentsiboa Izatea:</strong> Iritzi-saioetan edo defentsako galdera-erantzunetan, ikasle batzuek kritikari defentsiboki erantzutearen edo galdera zailekin urduri jartzearen akatsa egiten dute. Garrantzitsua da lasai egotea eta galderak argitzeko aukera gisa tratatzea, ez eraso gisa. Ez esan “ez nuen horretarako denborarik izan” oldarkorki edo ez baztertu galdera bat. Akatsa da eztabaidatzea aitortu eta azaldu beharrean. Batzordea zure ulermena probatzen ari da, ez zuri pertsonalki erasotzen. Erantzun bat ez badakizu ere, akatsa izua izatea edo engainatzen saiatzea da. Hobe da ziurgabetasuna onartzea eta arrazoitzea (III.3 Zatian eztabaidatu bezala).</p></li>
+<li><p><strong>Irudiak eta Datuen Aurkezpena Ez Zuzentzea:</strong> Beste ohiko hutsegite bat: grafikoak aurkezpenerako edo tesirako ez egokitzea – adibidez, etiketa txikiak ardatzetan, edo inprimatzean bereizten ez diren koloreak. Edo datu gordinen taulak testuingururik gabe sartzea. Leundu beti zure irudiak (akatsa da Excel/Python grafiko lehenetsiak erabiltzea argitalpen-kalitatekoak egin gabe). Gainera, ziurtatu koherentzia. Egiaztatu testuko irudi-erreferentziak zuzenak direla. Aurkezpenetarako, akats tipikoa da diapositiba batean inork irakurri ezin dituen grafiko anitz pilatzea.</p></li>
+<li><p><strong>Audientziaren Ikuspegia Ahaztea:</strong> Akats asko irakurlearen/entzulearen larruan ez jartzean laburbiltzen dira. Horrek hizkuntza teknikoegia dakar, ez daukaten ezagutza suposatzea edo zientzia komunikatzen duenari baino axola zaizkizun xehetasunei erreparatzea. Galdetu beti: <em>nire eguneroko lanean ez dagoen norbaitek ulertuko al luke hau?</em> Hala ez bada, berridatzi edo azaldu. Audientziarekin lotutako beste akats bat garrantzia ez nabarmentzea da – agian xehetasunetan hain sartuta zaude, non ahazten duzun lana zergatik den garrantzitsua adieraztea. Ziurtatu irudi orokorrarekin konektatzen duzula.</p></li>
+</ul>
+<p><strong>Nola Saihestu/Zuzendu Akatsak:</strong> Akats arrunt hauek ezagutzea lehen urratsa da. Erabili eskuliburu honen aurreko atalak gida gisa – jarraitu zure kronograma, erabili kontrol-zerrenda, praktikatu zure hitzaldia eta eskatu iritzia. Antolatua eta proaktiboa izan, eta berez saihestuko dituzu oztopo horietako asko. Akats horietako bat egin duzula konturatzen bazara (esan dezagun, eperako bi aste falta direla eta ia ez zarela idazten hasi), hartu arnasa sakon eta egin plan bideratu bat harrapatzeko. Akats asko arindu daitezke goiz jorratzen badira. Gakoa ez da izua izatea, baizik eta arazoak sistematikoki konpontzea.</p>
+<p>Laburbilduz, saihestu atzerapena, inplikatu zure zuzendaria, egin zure lanaren segurtasun-kopia, jarri arreta formatuan, esleitu denbora idazketarako eta berrikuspenerako, eta praktikatu zure aurkezpena. Urrats hauek ikasleak oztopatzen dituzten ohiko akatsetatik aldentzen lagunduko dizute, GRAL esperientzia leunagoa eta arrakastatsuagoa lortuz.</p>
+<h2 id="zuzendari-baten-azken-aholkuak" class="anchored">5.3 Zuzendari baten Azken Aholkuak</h2>
+<p>Amaitzeko ikuspegi gisa, hona hemen zuzendariek gradu amaierako ikasleei maiz ematen dizkieten <strong>azken aholku</strong> batzuk:</p>
+<ul>
+<li><p><strong>Hasi Goiz eta Planifikatu Aldez Aurretik:</strong> Mantra hau ezin da gehiegi azpimarratu. Hasi zure literaturaren berrikuspena eta proiektuaren plangintza ahalik eta azkarren. Emaitzarik ez baduzu ere, hasi sarrerako atalak idazten edo zure analisi-kodea konfiguratzen. Hasierako bultzadak azken orduko estresa saihesten laguntzen du. Aholkulari batek esan zuen bezala, <em>“Denbora da gehiago lortu ezin duzun gauza bakarra – erabili zentzuz lehen egunetik.”</em> Sortu mugarriak dituen kronograma bat eta eutsi horri.</p></li>
+<li><p><strong>Mantendu Aldizkako Komunikazioa:</strong> Mantendu zure zuzendaria aurrerapenaren eta oztopoen berri. Ez izan zalantzarik galderak egiteko – argibideak bilatzea konpromisoaren seinale da, ez ezjakintasunarena. Zuzendariek eskertzen dute ikasleak proaktiboak izatea iritzia jasotzen eta atzetik ibili gabe eguneratzen dituztenak. Antolatu check-in-ak eta etorri prestatuta galderekin edo aurrerapenaren laburpen labur batekin. Honek kontuak ematen laguntzen dizu eta zure zuzendariari arazo txikiak arazo handi bihurtu aurretik gidatzen uzten dio.</p></li>
+<li><p><strong>Izan Kuriosoa eta Hartu Ekimena:</strong> Tesi bat ikaskuntza-esperientzia bat da – murgildu zaitez bertan jakin-minarekin. Ez egin gutxienekoa bakarrik; arakatu alboko galdera interesgarriak (irismenaren barruan). Emaitzetan ustekabeko zerbait agertzen bada, ikertu. Zuzendariei gustatzen zaie ikasleek proiektuaren jabetza intelektuala hartzen ikustea. Horrek jakin-min zientifikoa erakusten du eta batzuetan zure tesian edo defentsan eztabaidatzeko ikuspegi gehigarriak eman ditzake.</p></li>
+<li><p><strong>Egon Antolatuta (Bai Ikerketan Bai Idazketan):</strong> Garatu ohitura onak – mantendu laborategiko koaderno edo erregistro-liburu txukun bat (erregistratu esperimentuak, kode-aldaketak, pentsamenduak), antolatu zure datu-fitxategiak eta erreferentziak, eta egin zure tesiaren eskema idatzi aurretik fluxu logikoa ziurtatzeko. Antolakuntzak denbora aurrezten du. Aholku bat: <em>“Dokumentatu dena.”</em> Horrek kodea iruzkintzea, hipotesiak apuntatzea eta aurkikuntza gordinen interpretazioa idaztea barne hartzen ditu. Tesia idaztean eta aztertzaileei erantzutean lagunduko du.</p></li>
+<li><p><strong>Besarkatu Iritzia eta Kritika:</strong> Prozesuan zehar, kritika jasoko duzu – zure proposamenean, zirriborro-kapituluetan, zure analisi-ikuspegian. Ez hartu pertsonalki; zientzialari onduenek ere badituzte beren lanak zuzenduta. Horren ordez, <em>tratatu iritzia doako esperientzia gisa</em>. Inplementatu iradokizunak arduraz. Ados ez bazaude, eztabaidatu zure zuzendariarekin lasai – askotan merezimendua dago haien ikuspegian edo konpromiso-irtenbide batean. Iritziari erantzun eta zure lana hobetu dezakezula erakustea zuzendariek oso positiboki baloratzen duten zerbait da. Defentsan, aztertzaile batek zerbait zuzentzen edo zalantzan jartzen badu, aitortu eta erantzun errespetuz.</p></li>
+<li><p><strong>Zentratu Argitasunean eta Istorioen Kontaketan:</strong> Zure zuzendariak teknikoki sendoa ez ezik, irakurtzeko atsegina den tesi bat sortzea nahi du. Beraz, jarri arreta idazketa-kalitatean – azaldu kontzeptuak ikaskide bati bezala, ez adituei bakarrik. Irakasle senior baten aholkua: <em>“Galdetu beti: espezialista ez den batek ulertuko al luke hau? Ez bada, gehitu azalpena edo sinplifikatu.”</em> Zure aurkezpenean, kontatu istorio bat gertakariak errezitatu beharrean. Gidatu audientzia: adibidez, <em>“Lehenik eta behin, puzzle hau konpontzera abiatu ginen… gero oztopo bat aurkitu genuen… hona hemen nola gainditu genuen… eta hau da ikasi genuena.”</em> Narratiba horrek jendea engaiatuta mantentzen du eta zure ulermen sakona erakusten du.</p></li>
+<li><p><strong>Jarri Arreta Xehetasunetan, Baina Mantendu Ikuspegia:</strong> Fisikako ikerketak xehetasunetan arreta eskatzen du. Arlo bateko zabarkeriak (unitate-akatsak edo minus zeinu bat ahaztea bezala) emaitza oso bat ahuldu dezake. Beraz, egiaztatu xehetasunak koherentziaz. Hala ere, aldi berean, mantendu irudi orokorraren kontrola: <em>Zergatik</em> ari zara hau egiten eta <em>zer</em> inplikatzen du? Ez galdu hainbeste xehetasunetan helburu zabalagoa ahazten duzula. Zuzendariek askotan aholkatzen dute: <em>“Ez utzi xehetasunei mezua itotzen.”</em> Praktikan, horrek esan nahi du analisi zehatzaren ondoren, atzera egin eta galdetu, “Zer esan nahi du emaitza honek termino errazetan?” eta ziurtatu hori argi dagoela zure tesian eta hitzaldian.</p></li>
+<li><p><strong>Zaindu Zeure Burua:</strong> Ohikoa da ikasleek beren burua gehiegi estutzea, batez ere epeetatik gertu. Baina zuzendariek badakite erreta egoteak akatsak eta etekin txikiagoak dakarrela. Batek esan dezake, <em>“Goizean buru freskoa hobea da goizeko 3etan buru nekatua baino.”</em> Beraz, lo egin behar bezala, jan ondo eta hartu atsedenaldi laburrak indarberritzeko. Azken fase bizian, erabili denboraren kudeaketa (Pomodoro teknika edo antzekoa) eraginkortasunez lan egiteko, arnasguneak ematen dizkizun bitartean.</p></li>
+<li><p><strong>Praktikatu Defentsa:</strong> Zure zuzendariak ziurrenik defentsa simulatu bat egitea edo gutxienez zure hitzaldia entzutea eskainiko du. Hartu aukera hori. Litekeena den galderak egin ditzakete eta aurkezpen-estiloari buruzko argibideak eman. Emango luketen azken aholku bat: <em>“Aurreikusi galderak, baina ustekabeko bat lortzen baduzu, egon lasai eta arrazoitu ozenki.”</em> Arrakasta izatea nahi dute, beraz, galdera zailak kudeatzen trebatuko zaituzte praktikan pixka bat landuz.</p></li>
+<li><p><strong>Gogoratu Helburua:</strong> Azkenik, zuzendariek ikasleei gogorarazten diete GRALa ikaskuntza-bidaia bat dela, ez azterketa bat soilik. Zientzialari bihurtzen ari zara prozesu honen bidez. Beraz, gozatu aurkikuntza-alderdiez eta ez izan beldurrik bidean akatsak egiteko (ikasi horietatik). Egon harro lortutakoaz – askotan, zure gai zehatzari buruz saileko beste inork baino gehiago jakingo duzu. Eraman konfiantza hori defentsara. Zuzendari batek esan zidan bezala, <em>“Egunaren amaieran, zu zara zure proiektuan aditua. Erakutsi zer ikasi duzun.”</em></p></li>
+</ul>
+<p>Ondorioz, zuzendari ondu baten aholkuak honela laburbildu daitezke: <strong>planifikatu ondo, lan egin etengabe, bilatu laguntza behar denean, komunikatu argi eta mantendu profesionaltasuna eta ongizatea prozesu osoan zehar</strong>. Printzipio hauek jarraitzeak tesi eta defentsa sendoak sortzen laguntzeaz gain, zure etorkizuneko ahaleginetarako ikerketa-ohitura onak lantzen ere lagunduko dizu. Zorionak zure GRALa osatzeagatik – orain joan eta partekatu zure ezagutza konfiantzaz!</p>
+
+
+<footer class="site-foot">
+  <div class="site-foot__inner">
+    <div class="foot-grid" data-lang="en">
+      <div class="foot-about">
+        <h4 class="anchored">igartua / gral-tfg</h4>
+        <p>Bachelor's theses (Gradu Amaierako Lanak / Trabajos de Fin de Grado) in Physics
+           supervised by Josu M. Igartua at the Faculty of Science and Technology,
+           University of the Basque Country (UPV/EHU), Leioa.</p>
+        <div class="cite-block">Josu M. Igartua Aldamiz · Physics Department, UPV/EHU<br>
+           josu.igartua@ehu.eus · ORCID 0000-0001-7983-5331</div>
+      </div>
+      <div>
+        <h4 class="anchored">Theses</h4>
+        <ul>
+          <li><a href="../../past-tfg/index.html">Past GrAL/TFG</a></li>
+          <li><a href="../../on-going/index.html">On going</a></li>
+          <li><a href="../../proposals/index.html">Proposals</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="anchored">For students</h4>
+        <ul>
+          <li><a href="../../preparing/index.html">Preparation manual</a></li>
+          <li><a href="../../preparing/part_01_01.html">Developing the project</a></li>
+          <li><a href="../../preparing/part_02_01.html">Writing the report</a></li>
+          <li><a href="../../preparing/part_03_01.html">Presentation and defence</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="anchored">Connect</h4>
+        <ul>
+          <li><a href="mailto:josu.igartua@ehu.eus">Email</a></li>
+          <li><a href="https://scholar.google.com/citations?user=nYJ--CkAAAAJ">Google Scholar</a></li>
+          <li><a href="https://ekoizpen-zientifikoa.ehu.eus/investigadores/128210/detalle">UPV/EHU research profile</a></li>
+          <li><a href="https://github.com/jmigartua">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-grid" data-lang="es">
+      <div class="foot-about">
+        <h4 class="anchored">igartua / gral-tfg</h4>
+        <p>Trabajos de Fin de Grado (Gradu Amaierako Lanak) en Física dirigidos por
+           Josu M. Igartua en la Facultad de Ciencia y Tecnología de la
+           Universidad del País Vasco (UPV/EHU), Leioa.</p>
+        <div class="cite-block">Josu M. Igartua Aldamiz · Departamento de Física, UPV/EHU<br>
+           josu.igartua@ehu.eus · ORCID 0000-0001-7983-5331</div>
+      </div>
+      <div>
+        <h4 class="anchored">Trabajos</h4>
+        <ul>
+          <li><a href="../../es/past-tfg/index.html">GrAL/TFG anteriores</a></li>
+          <li><a href="../../es/on-going/index.html">En curso</a></li>
+          <li><a href="../../es/proposals/index.html">Propuestas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="anchored">Para estudiantes</h4>
+        <ul>
+          <li><a href="../../es/preparing/index.html">Manual de preparación</a></li>
+          <li><a href="../../preparing/index.html">Manual completo (en inglés)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="anchored">Contacto</h4>
+        <ul>
+          <li><a href="mailto:josu.igartua@ehu.eus">Correo</a></li>
+          <li><a href="https://scholar.google.com/citations?user=nYJ--CkAAAAJ">Google Scholar</a></li>
+          <li><a href="https://ekoizpen-zientifikoa.ehu.eus/investigadores/128210/detalle">Perfil investigador UPV/EHU</a></li>
+          <li><a href="https://github.com/jmigartua">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-grid" data-lang="eu">
+      <div class="foot-about">
+        <h4 class="anchored">igartua / gral-tfg</h4>
+        <p>Josu M. Igartuak Euskal Herriko Unibertsitateko (UPV/EHU) Zientzia eta
+           Teknologia Fakultatean (Leioa) zuzendutako Fisikako Gradu Amaierako Lanak.</p>
+        <div class="cite-block">Josu M. Igartua Aldamiz · Fisika Saila, UPV/EHU<br>
+           josu.igartua@ehu.eus · ORCID 0000-0001-7983-5331</div>
+      </div>
+      <div>
+        <h4 class="anchored">Lanak</h4>
+        <ul>
+          <li><a href="../../eu/past-tfg/index.html">Aurreko GrAL/TFGak</a></li>
+          <li><a href="../../eu/on-going/index.html">Martxan</a></li>
+          <li><a href="../../eu/proposals/index.html">Proposamenak</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="anchored">Ikasleentzat</h4>
+        <ul>
+          <li><a href="../../eu/preparing/index.html">Prestaketa eskuliburua</a></li>
+          <li><a href="../../eu/preparing/part_01_01.html">Proiektuaren garapena</a></li>
+          <li><a href="../../eu/preparing/part_02_01.html">Txostena idaztea</a></li>
+          <li><a href="../../eu/preparing/part_03_01.html">Aurkezpena eta defentsa</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="anchored">Harremana</h4>
+        <ul>
+          <li><a href="mailto:josu.igartua@ehu.eus">Posta</a></li>
+          <li><a href="https://scholar.google.com/citations?user=nYJ--CkAAAAJ">Google Scholar</a></li>
+          <li><a href="https://ekoizpen-zientifikoa.ehu.eus/investigadores/128210/detalle">UPV/EHUko ikertzaile profila</a></li>
+          <li><a href="https://github.com/jmigartua">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2011–2026 Josu M. Igartua · UPV/EHU · Content under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> unless noted · Theses are credited to their authors; grades are never published</span>
+      <span>Built with <a href="https://quarto.org">Quarto</a> · <a href="https://github.com/jmigartua/tfgs">Source</a></span>
+    </div>
+  </div>
+</footer>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/jmigartua\.github\.io\/tfgs-website\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
