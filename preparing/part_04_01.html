@@ -118,10 +118,10 @@ ul.task-list li input[type="checkbox"] {
 </div></nav>
 <div class="docs">
 <aside class="docs-nav" aria-label="Manual sections">
-  <div class="group"><div class="t">Manual</div><ul>
+  <details class="group" open=""><summary class="t">Manual</summary><ul>
     <li><a href="index.html" data-part="index">Overview</a></li>
-  </ul></div>
-  <div class="group"><div class="t">Part I · Developing the project</div><ul>
+  </ul></details>
+  <details class="group"><summary class="t">Part I · Developing the project</summary><ul>
     <li><a href="part_01_01.html" data-part="part_01_01">Development of the TFG project</a><ul>
       <li><a href="part_01_01.html#s1-1">1.1 Understanding the project</a></li>
       <li><a href="part_01_01.html#s1-2">1.2 Theoretical preparation</a></li>
@@ -129,8 +129,8 @@ ul.task-list li input[type="checkbox"] {
       <li><a href="part_01_01.html#s1-4">1.4 Practical work</a></li>
       <li><a href="part_01_01.html#s1-5">1.5 Ethical considerations</a></li>
     </ul></li>
-  </ul></div>
-  <div class="group"><div class="t">Part II · Writing the report</div><ul>
+  </ul></details>
+  <details class="group"><summary class="t">Part II · Writing the report</summary><ul>
     <li><a href="part_02_01.html" data-part="part_02_01">Preparation of the report</a><ul>
       <li><a href="part_02_01.html#s2-1">2.1 Structure of the report</a></li>
       <li><a href="part_02_01.html#s2-2">2.2 Academic writing</a></li>
@@ -139,15 +139,15 @@ ul.task-list li input[type="checkbox"] {
       <li><a href="part_02_01.html#s2-5">2.5 Version control</a></li>
       <li><a href="part_02_01.html#s2-6">2.6 Environments</a></li>
     </ul></li>
-  </ul></div>
-  <div class="group"><div class="t">Part III · Presentation and defence</div><ul>
+  </ul></details>
+  <details class="group"><summary class="t">Part III · Presentation and defence</summary><ul>
     <li><a href="part_03_01.html" data-part="part_03_01">Presentation and defence</a><ul>
       <li><a href="part_03_01.html#s3-1">3.1 Preparing the presentation</a></li>
       <li><a href="part_03_01.html#s3-2">3.2 Public speaking</a></li>
       <li><a href="part_03_01.html#s3-3">3.3 The defence</a></li>
     </ul></li>
-  </ul></div>
-  <div class="group"><div class="t">Part IV · Tools</div><ul>
+  </ul></details>
+  <details class="group"><summary class="t">Part IV · Tools</summary><ul>
     <li><a href="part_04_01.html" data-part="part_04_01">Essential tools</a><ul>
       <li><a href="part_04_01.html#s4-1">4.1 Visual Studio Code</a></li>
       <li><a href="part_04_01.html#s4-2">4.2 Git and GitHub</a></li>
@@ -156,18 +156,18 @@ ul.task-list li input[type="checkbox"] {
       <li><a href="part_04_01.html#s4-5">4.5 LaTeX and Markdown</a></li>
       <li><a href="part_04_01.html#s4-6">4.6 Reproducibility</a></li>
     </ul></li>
-  </ul></div>
-  <div class="group"><div class="t">Part V · Checklists</div><ul>
+  </ul></details>
+  <details class="group"><summary class="t">Part V · Checklists</summary><ul>
     <li><a href="part_05_01.html" data-part="part_05_01">Tips, checklists and extras</a><ul>
       <li><a href="part_05_01.html#s5-1">5.1 Final checklist</a></li>
       <li><a href="part_05_01.html#s5-2">5.2 Common mistakes</a></li>
       <li><a href="part_05_01.html#s5-3">5.3 Advice from a supervisor</a></li>
     </ul></li>
-  </ul></div>
-  <div class="group"><div class="t">See also</div><ul>
+  </ul></details>
+  <details class="group" open=""><summary class="t">See also</summary><ul>
     <li><a href="../proposals/index.html">Proposals for 2026–2027</a></li>
     <li><a href="../past-tfg/index.html">Past theses</a></li>
-  </ul></div>
+  </ul></details>
 </aside>
 <main class="docs-main"><header id="title-block-header" class="quarto-title-block"><h1 class="title">Part IV · Essential tools</h1></header>
 <div class="docs-crumbs"><a href="index.html">Preparation manual</a><span class="sep">›</span>Part IV</div>
@@ -237,6 +237,9 @@ ul.task-list li input[type="checkbox"] {
   var here = location.pathname.split("/").pop().replace(/\.html$/, "") || "index";
   document.querySelectorAll("[data-part]").forEach(function (a) {
     if (a.getAttribute("data-part") === here) a.classList.add("current");
+  });
+  document.querySelectorAll(".docs-nav details.group").forEach(function (d) {
+    if (d.querySelector("a.current")) { d.open = true; d.classList.add("has-current"); }
   });
 })();
 </script>

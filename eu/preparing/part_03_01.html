@@ -118,10 +118,10 @@ ul.task-list li input[type="checkbox"] {
 </div></nav>
 <div class="docs">
 <aside class="docs-nav" aria-label="Eskuliburuaren atalak">
-  <div class="group"><div class="t">Eskuliburua</div><ul>
+  <details class="group" open=""><summary class="t">Eskuliburua</summary><ul>
     <li><a href="index.html" data-part="index">Ikuspegi orokorra</a></li>
-  </ul></div>
-  <div class="group"><div class="t">I. zatia · Proiektua garatzea</div><ul>
+  </ul></details>
+  <details class="group"><summary class="t">I. zatia · Proiektua garatzea</summary><ul>
     <li><a href="part_01_01.html" data-part="part_01_01">GRAL proiektuaren garapena</a><ul>
       <li><a href="part_01_01.html#s1-1">1.1 Proiektua ulertzea</a></li>
       <li><a href="part_01_01.html#s1-2">1.2 Prestaketa teorikoa</a></li>
@@ -129,8 +129,8 @@ ul.task-list li input[type="checkbox"] {
       <li><a href="part_01_01.html#s1-4">1.4 Lan praktikoa</a></li>
       <li><a href="part_01_01.html#s1-5">1.5 Gogoeta etikoak</a></li>
     </ul></li>
-  </ul></div>
-  <div class="group"><div class="t">II. zatia · Txostena idaztea</div><ul>
+  </ul></details>
+  <details class="group"><summary class="t">II. zatia · Txostena idaztea</summary><ul>
     <li><a href="part_02_01.html" data-part="part_02_01">Txostenaren prestaketa</a><ul>
       <li><a href="part_02_01.html#s2-1">2.1 Txostenaren egitura</a></li>
       <li><a href="part_02_01.html#s2-2">2.2 Idazketa akademikoa</a></li>
@@ -139,15 +139,15 @@ ul.task-list li input[type="checkbox"] {
       <li><a href="part_02_01.html#s2-5">2.5 Bertsio-kontrola</a></li>
       <li><a href="part_02_01.html#s2-6">2.6 Inguruneak</a></li>
     </ul></li>
-  </ul></div>
-  <div class="group"><div class="t">III. zatia · Aurkezpena eta defentsa</div><ul>
+  </ul></details>
+  <details class="group"><summary class="t">III. zatia · Aurkezpena eta defentsa</summary><ul>
     <li><a href="part_03_01.html" data-part="part_03_01">Aurkezpena eta defentsa</a><ul>
       <li><a href="part_03_01.html#s3-1">3.1 Aurkezpenaren prestaketa</a></li>
       <li><a href="part_03_01.html#s3-2">3.2 Jendaurrean hitz egitea</a></li>
       <li><a href="part_03_01.html#s3-3">3.3 Defentsa</a></li>
     </ul></li>
-  </ul></div>
-  <div class="group"><div class="t">IV. zatia · Tresnak</div><ul>
+  </ul></details>
+  <details class="group"><summary class="t">IV. zatia · Tresnak</summary><ul>
     <li><a href="part_04_01.html" data-part="part_04_01">Funtsezko tresnak</a><ul>
       <li><a href="part_04_01.html#s4-1">4.1 Visual Studio Code</a></li>
       <li><a href="part_04_01.html#s4-2">4.2 Git eta GitHub</a></li>
@@ -156,18 +156,18 @@ ul.task-list li input[type="checkbox"] {
       <li><a href="part_04_01.html#s4-5">4.5 LaTeX eta Markdown</a></li>
       <li><a href="part_04_01.html#s4-6">4.6 Erreproduzigarritasuna</a></li>
     </ul></li>
-  </ul></div>
-  <div class="group"><div class="t">V. zatia · Zerrendak</div><ul>
+  </ul></details>
+  <details class="group"><summary class="t">V. zatia · Zerrendak</summary><ul>
     <li><a href="part_05_01.html" data-part="part_05_01">Aholkuak, zerrendak eta gehigarriak</a><ul>
       <li><a href="part_05_01.html#s5-1">5.1 Azken zerrenda</a></li>
       <li><a href="part_05_01.html#s5-2">5.2 Ohiko akatsak</a></li>
       <li><a href="part_05_01.html#s5-3">5.3 Zuzendari baten aholkuak</a></li>
     </ul></li>
-  </ul></div>
-  <div class="group"><div class="t">Ikus ere</div><ul>
+  </ul></details>
+  <details class="group" open=""><summary class="t">Ikus ere</summary><ul>
     <li><a href="../proposals/index.html">2026–2027 proposamenak</a></li>
     <li><a href="../past-tfg/index.html">Aurreko lanak</a></li>
-  </ul></div>
+  </ul></details>
 </aside>
 <main class="docs-main"><header id="title-block-header" class="quarto-title-block"><h1 class="title">III. zatia · Aurkezpena eta defentsa</h1></header>
 <div class="docs-crumbs"><a href="index.html">Prestaketa eskuliburua</a><span class="sep">›</span>III. zatia</div>
@@ -233,6 +233,9 @@ ul.task-list li input[type="checkbox"] {
   var here = location.pathname.split("/").pop().replace(/\.html$/, "") || "index";
   document.querySelectorAll("[data-part]").forEach(function (a) {
     if (a.getAttribute("data-part") === here) a.classList.add("current");
+  });
+  document.querySelectorAll(".docs-nav details.group").forEach(function (d) {
+    if (d.querySelector("a.current")) { d.open = true; d.classList.add("has-current"); }
   });
 })();
 </script>
